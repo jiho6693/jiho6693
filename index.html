@@ -4,45 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jiho6693</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>JI-HO PARK</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#portfolio">포트폴리오</a></li>
-                <li><a href="#contact">연락</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="box1">
+    <div class="info">
+        &nbsp;&nbsp;PROVIDENCE  &nbsp;&nbsp;&nbsp;<span id="clock"></span> &nbsp;&nbsp;&nbsp;WEATHER: CLOUDS
+    </div>
+    <div class="name">
+        &nbsp;&nbsp;JI-HO PARK  INTERNET, INSTALLATION 
+        hello
+    </div>
+    <div class="about">
+       
+    </div>  
+</div>
+<div class="catergory1" onmouseover="changeImage('2.png')" onmouseout="resetImage()">
+    IMAGE
+</div>
+<div class="catergory2" onmouseover="changeImage('1.gif')" onmouseout="resetImage()">
+    INSTALLATION
+</div>
+<div class="catergory3" onmouseover="changeImage('2.png')" onmouseout="resetImage()">
+    WEB
+</div>
+<img id="mainImage" src="" class="mainimage">
+<div class="box2">
+    <p></p>
+</div>
 
-    <section id="about">
-        <h2>소개</h2>
-        <p>아티스트에 대한 간단한 소개 내용을 여기에 작성하세요.</p>
-    </section>
+<script>
+    const mainImage = document.getElementById('mainImage');
+    let originalImage = 'JIHO.gif';
 
-    <section id="portfolio">
-        <h2>포트폴리오</h2>
-        <div class="artwork">
-            <img src="artwork1.jpg" alt="작품 1">
-            <p>작품 설명 1</p>
-        </div>
-        <div class="artwork">
-            <img src="artwork2.jpg" alt="작품 2">
-            <p>작품 설명 2</p>
-        </div>
-        <!-- 추가 작품을 위한 코드를 추가하세요. -->
-    </section>
+    // 이미지 변경 함수
+    function changeImage(newImage) {
+        mainImage.src = newImage;
+    }
 
-    <section id="contact">
-        <h2>연락</h2>
-        <p>문의 사항이나 연락하고 싶은 내용을 여기에 작성하세요.</p>
-    </section>
+    // 이미지 리셋 함수
+    function resetImage() {
+        mainImage.src = originalImage;
+    }
 
-    <footer>
-        <p>&copy; 2023 아티스트 이름. 모든 권리 보유.</p>
-    </footer>
+    function updateClock() {
+        const clock = document.getElementById('clock');
+        const now = new Date();
+
+        // 시, 분, 초 추출
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        // 시계 업데이트
+        clock.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // 1초마다 시계 업데이트 호출
+    setInterval(updateClock, 1000);
+
+    function createRain() {
+        var rainContainer = document.createElement("div");
+        rainContainer.id = "rain";
+        for (var i = 0; i < 60; i++) {
+            var drop = document.createElement("div");
+            drop.className = "drop";
+            drop.style.left = Math.random() * 100 + "%";
+            drop.style.animationDuration = (1 + Math.random() * 2) + "s";
+            rainContainer.appendChild(drop);
+        }
+
+        // Add the rain container to the body
+        document.body.appendChild(rainContainer);
+    }
+
+    // 초기 로드 시 시계 업데이트와 비 생성 함수 호출
+    updateClock();
+    createRain();
+</script>
+
+<style>
+    /* Style for raindrops */
+    .drop {
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        background-color: blue;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+</style>
+
 </body>
 </html>
