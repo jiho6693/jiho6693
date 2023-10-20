@@ -1,67 +1,51 @@
-const mainImage = document.getElementById('mainImage');
-let originalImage = 'JIHO.gif';
+window.addEventListener("scroll", function () {
+    const category1 = document.getElementsByClassName("category1")[0]; // Select the first element with class "category1"
+    const scrollY = window.scrollY;
 
-// 이미지 변경 함수
-function changeImage(newImage) {
-    mainImage.src = newImage;
+    // Define a scroll threshold (adjust the value as needed)
+    const scrollThreshold = 10;
+
+    if (scrollY > scrollThreshold) {
+      // Hide the "category1" div by adding a CSS class
+      category1.classList.add("hidden");
+    } else {
+      // Show the "category1" div by removing the CSS class
+      category1.classList.remove("hidden");
+    }
+  });
+
+
+  function createRaindrop() {
+const raindrop = document.createElement("div");
+raindrop.className = "raindrop";
+raindrop.style.left = `${Math.random() * 100}%`;
+document.getElementById("rain").appendChild(raindrop);
+
+raindrop.addEventListener("animationiteration", () => {
+  // 비방울이 화면 하단에 도달하면 제거
+  raindrop.remove();
+});
 }
 
-// 이미지 리셋 함수
-function resetImage() {
-    mainImage.src = originalImage;
-}
+setInterval(createRaindrop, 50); // 새로운 비방울을 일정 간격으로 생성
 
 function updateClock() {
-    const clock = document.getElementById('clock');
-    const now = new Date();
+  const clock = document.getElementById('clock');
+  const now = new Date();
 
-    // 시, 분, 초 추출
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
+  // 시, 분, 초 추출
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
 
-    // 시계 업데이트
-    clock.textContent = `${hours}:${minutes}:${seconds}`;
+  // 시계 업데이트
+  clock.textContent = `${hours}:${minutes}:${seconds}`;
 }
 
 // 1초마다 시계 업데이트 호출
 setInterval(updateClock, 1000);
 
-function createRain() {
-    var rainContainer = document.createElement("div");
-    rainContainer.id = "rain";
-    for (var i = 0; i < 60; i++) {
-        var drop = document.createElement("div");
-        drop.className = "drop";
-        drop.style.left = Math.random() * 100 + "%";
-        drop.style.animationDuration = (1 + Math.random() * 2) + "s";
-        rainContainer.appendChild(drop);
-    }
-
-    // Add the rain container to the body
-    document.body.appendChild(rainContainer);
-}
-
-// 초기 로드 시 시계 업데이트와 비 생성 함수 호출
 updateClock();
-createRain();
-</script>
 
-<style>
-/* Style for raindrops */
-.drop {
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    background-color: blue;
-    animation: fall linear infinite;
-}
 
-@keyframes fall {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
-}
+å

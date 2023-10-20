@@ -1,0 +1,102 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+    
+
+    body{
+       
+        font-size: 1.5vw;
+        font-family: 'Helvetica Neue', sans-serif;
+        -ms-overflow-style: none;
+        overscroll-behavior: none;
+    }
+
+    .home{
+        font-size:2vw;
+        position:fixed;
+    }
+    
+    .main {
+        text-align: center;   
+    }
+    
+    .main img{
+        margin-top:3%;
+       width:85%;
+    }
+
+    .info{
+        margin: 0.8% 9% 0 9% ;
+      
+    }
+
+    .credit{
+        font-size:1vw;
+    }
+
+
+
+    .video{
+        margin: 5% 5% 0 5% ;
+        width:90%;
+    }
+
+    .mark{
+        margin: 2% 7% 0 7% ;
+    }
+
+
+    ::-webkit-scrollbar {
+  display: none;
+}
+
+                .name{
+                
+                overflow: hidden;
+                white-space: nowrap;
+
+                    
+                margin-top:0%;
+                padding-top:0%;
+                position: fixed;
+                margin-left:0.5%;
+                color:#000000;
+                font-size: 2vw;
+                
+                
+                
+                }
+
+                .marquee {
+                
+                width:100%;
+                
+                white-space: nowrap;
+
+
+
+                display: inline-block;
+                animation: marquee 5s linear infinite;
+                
+                }
+
+            @keyframes marquee {
+            0% {
+                transform: translate(10%, 0);
+            }
+            100% {
+                transform: translate(0%, 0);
+            }
+            }
+
+            a:link, a:visited {
+
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+
+            }
+
+            a:hover{
+            filter: blur(10px);
+            color: rgb(0, 0, 0);
+            }
+ 

@@ -4,79 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../module/inpage.css">
     <style>
-    @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-
     
-
-    body{
-        background: linear-gradient(180deg, #ffffff 0%,#d8d8d8 5%, #ffffff);
-        font-size: 1.5vw;
-        font-family: 'Helvetica Neue', sans-serif;
-        -ms-overflow-style: none;
-        overscroll-behavior: none;
-    }
-
-    ::-webkit-scrollbar {
-  display: none;
-}
-
-a:link, a:visited {
-
-color: rgb(0, 0, 0);
-text-decoration: none;
-
-}
-
-a:hover{
-filter: blur(20px);
-color: rgb(0, 0, 0);
-}
-    .home{
-        font-size:2vw;
-        position:fixed;
-    }
-    
-    .main {
-        text-align: center;   
-    }
-    
-    .main img{
-        margin-top:3%;
-        vertical-align: middle;
-       width:88%;
-    }
-
-    .info{
-        margin: 0.8% 7% 0 7% ;
-      
-    }
-
-    .credit{
-        font-size:1vw;
-    }
-
-    .description{
-        margin: 1% 7% 0 7% ;
-    }
-
-    .video{
-        margin: 5% 5% 0 5% ;
-        width:90%;
-    }
-
-    .mark{
-        margin: 2% 7% 0 7% ;
-    }
-
     </style>
 </head>
 
 <body>
-    <div class="home">
-        JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD // <a href="../cv.html">CV</a> // <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a> // <a href="../contact.html">CONTACT</a> // <a href="../index.html">HOME</a> //
-    </div>
+    <div id="header"></div>
+   
     <div class="main">
         <img src="./Goodbyeservice/g_3_1.jpg">
     </div>
@@ -93,18 +29,33 @@ color: rgb(0, 0, 0);
             Camera / Weon Jeongin, Jisu kim, shihyun Cha, Donghyun lee, Wookyung Jeon
             <br>
             Special Thanks to Jewyo rhii</div>
-        
-    </div>
+        <div class="description">
+                <br> During the exhibition's de-installation, I dealt with unwanted artworks and contemplated disposal methods from the start. I created a versatile incinerator to handle various art pieces, adjusting its structure as needed. On the final de-installation day, we processed the artworks in a procession, giving a symbolic farewell to these once-monumental objects. The incinerator, too, left the museum after serving its purpose. It was disassembled, with salvageable parts sold and the rest disposed of.
+        </div>
+     </div>
 
-    <div class="description">
-       <br> - During the exhibition's de-installation, I dealt with unwanted artworks and contemplated disposal methods from the start. I created a versatile incinerator to handle various art pieces, adjusting its structure as needed. On the final de-installation day, we processed the artworks in a procession, giving a symbolic farewell to these once-monumental objects. The incinerator, too, left the museum after serving its purpose. It was disassembled, with salvageable parts sold and the rest disposed of.
-    </div>
+   
 
     <div class="video">
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/746895432?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Goodbye Service (Clip Version)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </div>
-    <div class="mark"> © JI-HO PARK </div>
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
     <script>
+
+
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
         const images = [
           "./Goodbyeservice/g_3_1.jpg", "./Goodbyeservice/g_2_2.jpg"
           // Add more image paths as needed
