@@ -4,9 +4,8 @@
 body {
     margin: 0 0 0 0;
     font-family: 'Helvetica Neue', sans-serif;
-   
+    overscroll-behavior: none;
     color:rgb(0, 0, 0);
-    
     -ms-overflow-style: none;
  }
  
@@ -14,63 +13,83 @@ body {
   display: none;
 }
 
-.info {
-    color:#000000;
-    margin: 0 0 0 0;
-    position: fixed;
-    /* margin-top:-3.5rem;
-    margin-bottom: -3.5rem; */
-    font-size: 7vw; 
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    left:0.5%;
+a:link, a:visited {
 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+  }
+
+a:hover{
+    color: rgb(255, 255, 255);
 }
 
-
 #rain {
-    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 9999;
-    overflow: hidden;
+    background: transparent;
   }
-
-  #rain .drop {
+  
+  .raindrop {
     position: absolute;
-    width: 2px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.2);
-    animation: rainAnimation 1s linear infinite;
+    width: 0.1vw;
+    height: 5vw;
+    background: rgb(135, 135, 135);
+    opacity: 0.2;
+    animation: fall 1s linear infinite;
   }
-
-  @keyframes rainAnimation {
+  
+  @keyframes fall {
     0% {
-      transform: translateY(-100%);
-      opacity: 0;
+        transform: translateY(0);
     }
     100% {
-      transform: translateY(200vh);
-      opacity: 1;
+        transform: translateY(100vh);
     }
-  }
-
-
-.mainimage {
-    
-    margin: 0 0 0 0;
-    width:100%;
-    
 }
+
+
+.name{
+    margin-top:0%;
+    padding-top:0%;
+    position: fixed;
+    margin-left:0.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    color:#000000;
+    font-size: 2vw;
+    
+   
+  
+}
+
+.grid-item4{
+    position: fixed;
+    right:0%;
+}
+
+.info {
+    color:#000000;
+    margin: 0.8% 0 0 0;
+    position: fixed;
+    /* margin-top:-3.5rem;
+    margin-bottom: -3.5rem; */
+    font-size: 6.3vw; 
+    
+    
+    left:0.5%;
+
+}
+
 
 .category1{
     
     position:fixed;
-    font-size: 7vw;
+    font-size: 6.3vw;
     color:rgb(0, 0, 0);
     bottom: 0;
     left:0.5%;
@@ -99,39 +118,21 @@ body {
 } */
 
 
-.web{
-    
- font-size: 2vw;
 
-}
 
 .index{
     margin-left: 1%;
     display: grid;
-    grid-template-columns: 1.5fr 2fr 3fr;
+    grid-template-columns: 1.7fr 2.2fr 2.9fr 1.9fr;
 }
 
-
-
-.marquee{   
-    /* position: fixed;   */
-    width: 100%;
-    /* bottom: 0px;
-    right: 0px; */
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    /* background-color: rgba(254, 254, 254, 0.9); */
-    /* padding-top: 0.5ch; 
-    padding-bottom: 0.3ch;  */
-  
+.web{
     
-}
+    font-size: 2vw;
+   
+   }
 
 
-/* footer {
-    position: fixed;  
-    bottom: 0;
-} */
 
 
  

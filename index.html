@@ -7,48 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="rain"></div>
+<div class="name">
+    <div calss="grid-item1">
+        JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD // CV // <a href="https://www.instagram.com/ziros3002/">INSTAGRAM</a> // CONTACT //
+    </div>
+  
+</div>
+
 <div class="info">
-    WEB / IMAGE / INSTALLATION 
+    WEB / IMAGE / INSTALL- / LABOR
 </div>
 
 <div class="category1">
-    WEB / IMAGE / INSTALLATION 
+    WEB / IMAGE / INSTALL- / LABOR
 </div>
 
 <div class="box2"></div>
 
 <div class="index">
-<div class="web">
-Pixel is not a square<br>
-Aerial perspective<br>
-Going4ward<br>
-Archive<br>
-Phone Zine<br>
-Ground<br>
-Thesis research<br>
-Weight shift<br>
-Sword, stone and hero<br>
-Loveyourdepot<br>_Gangnam<br>
-</div>
-<div class="web">
-    Landscape 212th<br>
-    
-    Drawing machine<br>
-    Moving House<br>
-    Demolition<br>
+    <div class="web">
+    Pixel is n-<br>
+    Aerial Perspective<br>
+    Goingforward<br>
+    RISD Archive<br>
+    Digital Zine<br>
+    Ground<br>
+    Thesis Research<br>
+    Weight Shift<br>
+    Sword, Stone and Hero<br>
+    -Gangnam Pavilion<br>
+    </div>
+    <div class="web">
+        Landscape 212th<br>
+        
+        Drawing machine<br>
+        Moving House<br>
+        Demolition<br>
 
+        
+    </div>
+    <div class="web">
+        Making a wall-<br>
+        Cyan No-type<br>
+        Goodbye Service<br>
+        Overnight Delivery<br>
+        We All Dance<br>
+        Bartering Truck<br>
+        Jacob's Ladder<br>
     
-</div>
-<div class="web">
-    Making a Wall and Throwing a stone<br>
-    Cyan No-type<br>
-    Goodbye Service<br>
-    Overnight Delivery<br>
-    We All Dance<br>
-    Bartering Truck<br>
-    Jacob's Ladder<br>
-   
-</div>
+    </div>
+
+    <div class="web">
+        Loose me tight<br>
+        Of Hundread carts-
+        LocusX<br>
+        LUD_Gangnam<br>
+        LUD_London<br>
+        LUD_MMCA<br>
+        VIDEO<br>
+        VIDEO<br>
+        VIDEO<br>
+        Installation#2<br>
+        VIDEO<br>
+        VIDEO<br>
+        VIDEO<br>
+        Installation#2<br>
+        VIDEO<br>
+        VIDEO<br>
+        VIDEO<br>
+    
+    </div>
+
 </div>
 <script>
    window.addEventListener("scroll", function () {
@@ -66,6 +96,40 @@ Loveyourdepot<br>_Gangnam<br>
         category1.classList.remove("hidden");
       }
     });
+
+
+    function createRaindrop() {
+  const raindrop = document.createElement("div");
+  raindrop.className = "raindrop";
+  raindrop.style.left = `${Math.random() * 100}%`;
+  document.getElementById("rain").appendChild(raindrop);
+
+  raindrop.addEventListener("animationiteration", () => {
+    // 비방울이 화면 하단에 도달하면 제거
+    raindrop.remove();
+  });
+}
+
+setInterval(createRaindrop, 50); // 새로운 비방울을 일정 간격으로 생성
+
+function updateClock() {
+    const clock = document.getElementById('clock');
+    const now = new Date();
+
+    // 시, 분, 초 추출
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    // 시계 업데이트
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// 1초마다 시계 업데이트 호출
+setInterval(updateClock, 1000);
+
+updateClock();
+
 </script>
 
 
