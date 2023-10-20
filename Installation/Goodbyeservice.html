@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+    body{
+        background-color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+    
+    .main {
+        text-align: center;   
+    }
+    
+    .main img{
+        margin-top:2%;
+        vertical-align: middle;
+       width:90%;
+    }
+
+    .info{
+        margin: 1% 5% 0 5% ;
+      
+    }
+
+    .credit{
+        font-size:1vw;
+    }
+
+    .description{
+        margin: 1% 5% 0 5% ;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="./Goodbyeservice/g_3_1.jpg">
+    </div>
+
+    <div class="info">
+        <div class="title"> Goodbye Service</div>
+        <div class="credit">
+            <br> 4K video, colour, sound, 22’ 32”, 2020
+            <br>
+            Director / Ji-ho Park
+            <br>
+            Performer / Ji-ho park, Taeho Kim, Dong-pil Jang
+            <br>
+            Camera / Weon Jeongin, Jisu kim, shihyun Cha, Donghyun lee, Wookyung Jeon
+            <br>
+            Special Thanks to Jewyo rhii</div>
+        
+    </div>
+
+    <div class="description">
+       <br> - During the exhibition's de-installation, I dealt with unwanted artworks and contemplated disposal methods from the start. I created a versatile incinerator to handle various art pieces, adjusting its structure as needed. On the final de-installation day, we processed the artworks in a procession, giving a symbolic farewell to these once-monumental objects. The incinerator, too, left the museum after serving its purpose. It was disassembled, with salvageable parts sold and the rest disposed of.
+    </div>
+
+    <script>
+        const images = [
+          "./Goodbyeservice/g_3_1.jpg", "./Goodbyeservice/g_2_2.jpg"
+          // Add more image paths as needed
+        ];
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1000);
+      </script>
+
+</body>
+</html>
