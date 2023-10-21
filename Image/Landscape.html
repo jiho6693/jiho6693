@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <style>
+   
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+        <img src="./Landscape/l-1.jpg">
+    </div>
+
+    <div class="info">
+        <div class="title"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A Landscape 212th, Photograph, 534KB</div>
+        <div class="credit">
+            
+      
+        <div class="description">
+                
+     </div>
+
+    <div class="sub">
+      <div id="imageContainer"></div>
+
+    </div>
+    
+ 
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+      fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    
+       
+       
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <style>
+  
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+        <img src="./Jacob'sladder/j-1.jpg">
+    </div>
+
+    <div class="info">
+        <div class="title"> 'Jacob's Ladder',
+           Installation, FHD video, colour, sound, 10'14", 2018
+        </div>
+        <div class="credit">
+            
+            </div>
+        <div class="description">
+            <br>
+            In recent years, the term 'flat' has become a prominent buzzword in the art world. This trend resembles a Korean castella store, rapidly expanding and exploding in popularity. During this period, many people stood in line, both curious and skeptical of the sudden surge in interest. What prompted this sudden fascination with 'flat'? What caused this surge in the 'flat' phenomenon?
+            <br><br>
+            This work delves into the concept of 'flat' and its widespread phenomenon, which has been evolving for several years. Furthermore, it explores an organization known as the 'Flat Earth Society.'
+            <br><br>
+            The "Flat Earth Society" is a web-based scientific organization that asserts the Earth's flatness, contrary to the common belief in its spherical shape. Their model of a 'flat earth' presents a hypothetical parallel world. Established around 2009, the organization is actively engaged on the internet. More recently, the Flat Earth Society has expanded beyond the online realm, organizing an international conference in Seoul.
+        </div>
+     </div>
+
+ 
+    
+    <div class="sub">
+        <img src="./Jacob'sladder/j-13.jpg"><img src="./Jacob'sladder/j-12.jpg"><img src="./Jacob'sladder/j-11.jpg"><img src="./Jacob'sladder/j-10.jpg"><img src="./Jacob'sladder/j-09.jpg"><img src="./Jacob'sladder/j-08.jpg"><img src="./Jacob'sladder/j-07.jpg"><img src="./Jacob'sladder/j-14.jpg">
+        </div>
+    
+    <script>
+
+
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+        const images = [
+        "./Jacob'sladder/j-1.jpg", "./Jacob'sladder/j-2.jpg","./Jacob'sladder/j-3.jpg","./Jacob'sladder/j-5.jpg","./Jacob'sladder/j-6.jpg"
+        ];
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1000);
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+        <img src="./Wealldance/w-1.jpg">
+    </div>
+
+    <div class="info">
+        <div class="title"> 'We all dance, Extended',
+            4K video, colour, sound, 1’ 35”, 2020
+        </div>
+        <div class="credit">
+            <br>
+            Director / Ji-ho Park
+            <br>Camera / Jisu kim
+            <br>Performer / Ji-ho park, Jisu kim, Yaerim Park, Donghyun Lee
+            <br>Special Thanks to SeungAe Hong
+            <br>
+            </div>
+        <div class="description">
+            <br>
+            These sculptural installations titled ‘We ALL’, by Artist Seung Ae Hong, were works that were left sitting in the hallway of the artist’s studio after the end of her solo show. These sculptures she calls her ‘babies’ were brought into Love Your Depot and after 5 months of storage, she requested for them to be thrown away.
+
+Thinking about ways to discard works of art, I decided to gather our team to perform(dance) a final Goodbye Waltz for these sculptures.
+
+The basic steps of the waltz were digitally created for us to practice the movements.
+<BR>
+And on the last night of the exhibition, when all lights were turned off, these babies were brought out to the main hall, and together, we danced the last Goodbye Waltz.
+        </div>
+     </div>
+
+     <div class="video">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/746897775?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Goodbye Service (Clip Version)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+
+ 
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+
+
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+        const images = [
+        "./Wealldance/w-1.jpg","./Wealldance/w-2.jpg", "./Wealldance/w-3.jpg","./Wealldance/w-4.jpg","./Wealldance/w-5.jpg","./Wealldance/w-6.jpg"
+       // Add more image paths as needed
+        ];
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1000);
+      </script>
+
+</body>
+</html>
