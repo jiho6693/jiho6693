@@ -13,15 +13,7 @@
     
     .main_image img{
         margin-top:3%;
-       width:71%;
-    }
-
-    .title{
-        margin: 3% 8% 0 8%;
-    }
-   
-    .description{
-        margin: 0 8% 0 8%;
+       width:85%;
     }
    
     </style>
@@ -31,23 +23,18 @@
     <div id="header"></div>
    
     <div class="main_image">
-       <img src="./Demolition/d-1.jpg">
+        <div id="imageContainer"></div>
     </div>
 
     <div class="info">
-        <div class="title"> Demolition, Photography, 2019, MMCA</div>
+        <div class="title"> Barteringtruck, Photography, 2018</div>
         <div class="credit">
             
             <br>
             </div>
         <div class="description">
-           This is a photograph taken at the National Museum of Modern and Contemporary Art showing the space being dismantled after the exhibition.
         </div>
      </div>
-
-     <div class="main_image">
-        <div id="imageContainer"></div>
-    </div>
 
    
 
@@ -70,14 +57,14 @@
  
            
             // 이미지 파일의 범위 (g-10부터 g-22까지)
-        const startImageNumber = 2;
-        const endImageNumber = 5;
+        const startImageNumber = 1;
+        const endImageNumber = 4;
         const imageContainer = document.getElementById('imageContainer');
 
         // 이미지를 동적으로 생성하여 페이지에 추가
         for (let i = startImageNumber; i <= endImageNumber; i++) {
             const img = document.createElement('img');
-            img.src = './Demolition/d-' + i + '.jpg'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
+            img.src = './Movinghouse/m-' + i + '.jpg'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
             img.alt = '이미지 g-' + i;
 
             // 이미지를 이미지 컨테이너에 추가

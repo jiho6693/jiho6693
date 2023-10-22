@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <style>
+      body{
+        background-color: black;
+        color:aliceblue;
+      }
+   
+    </style>
+    
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+        <div style="padding:56.25% 0 0 0;position:inherit; "><iframe src="https://player.vimeo.com/video/876900553?playsinlin=0h=ad045e21d6&autoplay=1&loop=1&muted=1&color=cd63e4&title=0&byline=0&portrait=0" style="position:absolute;top:3%;left:6%;width:88%;height:100%;" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+
+    <div class="info">
+        <div class="title"> Goingforward, 2023</div>
+        <div class="credit">
+            
+            <br>
+            Developer / Ji-ho Park
+            <br>
+            Designer / Yangqi Deng
+            <br>
+            Curator / JI-ho Park, Aya Abdallah, Catherine Ashley, Yanran Bi, Yangqi Deng
+            <br><br>
+            The main video's image is from the artwork of artist Yoo Do-won.</div>
+        <div class="description">
+            <br>
+            Going Forward is a rotational exhibition space and archive housing works of D+M students. 
+     
+            The exhibition will assemble digital, physical, and in-progress works that will live in the D+M front corridor.
+           <br>
+           In tandem with the corridor exhibition, Going Forward will also feature an archive website that will accumulate over the course of the semester. <br>This navigable website can be accessed through the monitor display in the space.
+    
+    
+            
+        </div>
+     </div>
+
+    
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+      
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+            const images = [];
+            for (let i = 1; i <= 5; i++) {
+            images.push(`./Gpt/g-${i}.jpg`);
+            }
+        
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1000);
+      </script>
+
+</body>
+</html>

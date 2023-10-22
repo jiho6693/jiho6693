@@ -1,0 +1,48 @@
+<html>
+<style>
+    .name {
+        display: table;
+        grid-template-columns: 1fr auto;
+        z-index: 1;
+        margin-top: 5%;
+        padding-top: 0%;
+        position: fixed;
+        margin-left: 0.5%;
+        font-size: 2vw;
+        overflow:hidden;
+        white-space: nowrap;
+     
+    }
+
+
+
+    .marquee {
+        
+        overflow:hidden;
+        display: inline-block;
+        
+     
+        border: 1px solid #4a4a4a;
+        background-color: red;
+        animation: marquee 5s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translate(100%, 0);
+        }
+        100% {
+            transform: translate(-100%, 0);
+        }
+    }
+</style>
+
+<body>
+    <div class="name">
+        <div class="grid-item1">
+            <a href="javascript:void(0);">HOME</a> // <a href="javascript:void(0);">CV</a> // <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a> // <a href="./contact.html">CONTACT</a> //
+           <div class="marquee">JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD // Artistasdfasddasfs</div>
+</div>
+    </div>
+</body>
+</html>

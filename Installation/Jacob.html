@@ -6,7 +6,14 @@
     <title></title>
     <link rel="stylesheet" href="../module/inpage.css">
     <style>
-  
+  .main img{
+    width:72%;
+  }
+
+  .info_jacob{
+    margin: 2% 17% 0 17%;
+
+  }
     </style>
 </head>
 
@@ -17,7 +24,7 @@
         <img src="./Jacob'sladder/j-1.jpg">
     </div>
 
-    <div class="info">
+    <div class="info_jacob">
         <div class="title"> 'Jacob's Ladder',
            Installation, FHD video, colour, sound, 10'14", 2018
         </div>
@@ -51,9 +58,13 @@
             });
  
 
-        const images = [
-        "./Jacob'sladder/j-1.jpg", "./Jacob'sladder/j-2.jpg","./Jacob'sladder/j-3.jpg","./Jacob'sladder/j-5.jpg","./Jacob'sladder/j-6.jpg"
-        ];
+
+
+        const images = [];
+            for (let i = 1; i <= 6; i++) {
+            images.push(`./Jacob'sladder/j-${i}.jpg`);
+            }
+        
         
         let currentIndex = 0;
         const imageElement = document.querySelector(".main img");

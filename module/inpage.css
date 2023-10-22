@@ -65,7 +65,7 @@
                 
                 overflow: hidden;
                 white-space: nowrap;
-
+                z-index:1;
                     
                 margin-top:0%;
                 padding-top:0%;

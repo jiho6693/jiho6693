@@ -39,9 +39,9 @@ a:hover{
   
   .raindrop {
     position: absolute;
-    width: 0.1vw;
+    width: 0.15vw;
     height: 5vw;
-    background: rgb(135, 135, 135);
+    background: rgb(105, 104, 104);
     opacity: 0.2;
     animation: fall 1s linear infinite;
   }
@@ -61,7 +61,7 @@ a:hover{
     overflow: hidden;
     white-space: nowrap;
 
-     
+    z-index:1;
     margin-top:0%;
     padding-top:0%;
     position: fixed;

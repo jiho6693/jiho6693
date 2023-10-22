@@ -72,10 +72,11 @@
             });
  
 
-        const images = [
-          "./Goodbyeservice/g-1.jpg", "./Goodbyeservice/g-2.jpg", "./Goodbyeservice/g-3.jpg", "./Goodbyeservice/g-4.jpg", "./Goodbyeservice/g-5.jpg", "./Goodbyeservice/g-6.jpg", "./Goodbyeservice/g-7.jpg","./Goodbyeservice/g-8.jpg"
-          // Add more image paths as needed
-        ];
+            const images = [];
+            for (let i = 1; i <= 8; i++) {
+            images.push(`./Goodbyeservice/g-${i}.jpg`);
+            }
+        
         
         let currentIndex = 0;
         const imageElement = document.querySelector(".main img");

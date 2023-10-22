@@ -63,10 +63,10 @@ And on the last night of the exhibition, when all lights were turned off, these 
             });
  
 
-        const images = [
-        "./Wealldance/w-1.jpg","./Wealldance/w-2.jpg", "./Wealldance/w-3.jpg","./Wealldance/w-4.jpg","./Wealldance/w-5.jpg","./Wealldance/w-6.jpg"
-       // Add more image paths as needed
-        ];
+        const images = [];
+            for (let i = 1; i <= 6; i++) {
+            images.push(`./Wealldance/w-${i}.jpg`);
+            }
         
         let currentIndex = 0;
         const imageElement = document.querySelector(".main img");

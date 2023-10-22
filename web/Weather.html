@@ -6,46 +6,30 @@
     <title></title>
     <link rel="stylesheet" href="../module/inpage.css">
     <style>
-    body {
-      background-color: black;
-      color:white;
-    
-    }
-
-
-   
+ 
     </style>
+    
 </head>
 
 <body>
     <div id="header"></div>
    
     <div class="main">
-        <img src="./Cyanotype/C-1.jpg">
-    </div>
+        <div style="padding:56.25% 0 0 0;position:inherit; "><iframe src="https://player.vimeo.com/video/876899068?playsinlin=0h=ad045e21d6&autoplay=1&loop=1&muted=1&color=cd63e4&title=0&byline=0&portrait=0" style="position:absolute;top:2%;left:5%;width:90%;height:100%;" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
 
     <div class="info">
-        <div class="title"> 'Cyan No-type', Mixed media, 2022</div>
+        <div class="title"> 'Weather Book',WEB, 2022</div>
         <div class="credit">
             
-            <br>
-            The Ink Group(Huanzhe Hu, Yangqi Deng and Jiho Park)</div>
+           </div>
         <div class="description">
-               
-                <br> This is a collaborative mixed media installation project, including experimental cyanotype film, 3D print model, digital prints, projection, nature element, etc. 
-
-                The group reconstructed the landscape with fractured data from nature. Initiating on-going dialogues between new and old, physical and digital, handmade and machine. We try to bridge between the ancient craft and digital technology through a constant transformation in dimension and material, particularly the cyanotype process. The long-time exposure simultaneously captures a discrete moment in time but also evokes a feeling of timelessness. The traces left through Cyanotype chemical by natural and artificial light between organic and inorganic matter emerges as the evidence of memory.
-                
+            <br>
+            This website compiles books, articles, and papers related to weather. <br>The website dynamically reflects the changing environment based on real weather conditions – for instance, it rains on rainy days and turns cloudy on overcast ones. Additionally, the website's colors gradually shift over time in accordance with the passing hours.
+    
+            
         </div>
      </div>
-
-     <div class="sub">
-      <img src="./Cyanotype/C-05.jpg"> <img src="./Cyanotype/C-09.jpg"><img src="./Cyanotype/C-08.jpg"> <img src="./Cyanotype/C-12.jpg">
-      <img src="./Cyanotype/C-10.jpg">
-    </div>
-
-
-   
 
     
     
@@ -55,8 +39,7 @@
     
     
     <script>
-
-
+      
         // 모듈을 가져와서 삽입합니다.
         fetch('../module/header')
             .then(response => response.text())
@@ -65,11 +48,9 @@
             });
  
 
-       
-
-        const images = [];
-            for (let i = 1; i <= 3; i++) {
-            images.push(`./Cyanotype/C-${i}.jpg`);
+            const images = [];
+            for (let i = 1; i <= 5; i++) {
+            images.push(`./Gpt/g-${i}.jpg`);
             }
         
         
