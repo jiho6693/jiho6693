@@ -9,6 +9,7 @@ body {
     -ms-overflow-style: none;
     overscroll-behavior: none;
     white-space: no-wrap;
+    
  }
  
 ::-webkit-scrollbar {
@@ -25,6 +26,8 @@ a:link, a:visited {
 a:hover{
     filter: blur(20px);
     color: rgb(0, 0, 0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 #rain {
