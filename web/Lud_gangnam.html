@@ -6,35 +6,41 @@
     <title></title>
     <link rel="stylesheet" href="../module/inpage.css">
     <style>
-      body{
-        background-color: rgb(85, 170, 90);
-        color:rgb(165, 75, 135);
-      }
+    body {
+      background-color: rgb(255, 247, 1);
+      
+    
+    }
+
+
    
     </style>
-    
 </head>
 
 <body>
     <div id="header"></div>
    
     <div class="main">
-        <div style="padding:56.25% 0 0 0;position:relative; "><iframe src="https://player.vimeo.com/video/876900553?playsinlin=0h=ad045e21d6&autoplay=1&loop=1&muted=1&color=cd63e4&title=0&byline=0&portrait=0" style="position:absolute;top:0%;left:6%;width:88%;height:100%;" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      </div>
+        <img src="../labor/gangnam/web1.jpg">
+    </div>
 
     <div class="info">
-        <div class="title"> 'GPT competition', WEB,  2023</div>
+        <div class="title"> "LoveYourDepot_GangnamPavilion", Website, 2021</div>
         <div class="credit">
             
-          </div>
-        <div class="description">
             <br>
-            What are metaphors and creativity to Chat GPT?<br>
-            I asked Chat GPT to input my project title and the related artist statement, then generate 10 similar metaphors. Subsequently, Chat GPT created image codes for each metaphor. These metaphors and images were evaluated based on four criteria: Clarity, Creativity, Descriptiveness, and Effectiveness.
-            
-            
+            Developer : Ji-ho Park</div>
+        <div class="description">
+               
+                <br> This is a Website for the public project "LoveYourDepot_GangnamPavilion".
+                <br>
+                <a href="../labor/Gangnam.html">-> (More info)<br></a>
         </div>
      </div>
+
+
+
+   
 
     
     
@@ -44,7 +50,8 @@
     
     
     <script>
-      
+
+
         // 모듈을 가져와서 삽입합니다.
         fetch('../module/header')
             .then(response => response.text())
@@ -53,9 +60,11 @@
             });
  
 
-            const images = [];
-            for (let i = 1; i <= 5; i++) {
-            images.push(`./Gpt/g-${i}.jpg`);
+       
+
+        const images = [];
+            for (let i = 1; i <= 2; i++) {
+            images.push(`../labor/gangnam/web${i}.jpg`);
             }
         
         
