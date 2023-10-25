@@ -44,9 +44,9 @@ a:hover{
     position: absolute;
     width: 0.15vw;
     height: 5vw;
-    background: rgb(105, 104, 104);
+    background: rgb(93, 93, 93);
     opacity: 0.2;
-    animation: fall 1s linear infinite;
+    animation: fall 0.8s linear infinite;
   }
   
   @keyframes fall {

@@ -27,7 +27,7 @@ raindrop.addEventListener("animationiteration", () => {
 });
 }
 
-setInterval(createRaindrop, 50); // 새로운 비방울을 일정 간격으로 생성
+setInterval(createRaindrop, 180); // 새로운 비방울을 일정 간격으로 생성
 
 function updateClock() {
   const clock = document.getElementById('clock');
