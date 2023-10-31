@@ -18,6 +18,11 @@
     .main {
         text-align: center;   
     }
+
+    .main_image img{
+        margin-top:2.5%;
+       width:80%;
+    }
     
     .main img{
         margin-top:3%;
@@ -138,19 +143,23 @@
              
             }
 
+            .main_image img{
+                margin-top:3%;
+               width:100%;
+            }
+
             .main iframe{
-                margin-top:15%;
-                margin-bottom:15%;
-                
-                
-                width:100%;
+                margin-top:13%;
               
 
             }
+
+            
         
             .info{
+                position: relative;
                 
-                margin: 3% 5% 0 5% ;
+                margin: 12% 5% 0 5% ;
               
             }
         
