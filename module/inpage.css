@@ -4,14 +4,14 @@
 @media all and (min-width:768px){ 
     body{
        
-        font-size: 1.2vw;
+        font-size: 1.8rem;
         font-family: 'Helvetica Neue', sans-serif;
         -ms-overflow-style: none;
         overscroll-behavior: none;
     }
 
     .home{
-        font-size:2vw;
+        font-size:2rem;
         position:fixed;
     }
     
@@ -30,7 +30,7 @@
     }
 
     .credit{
-        font-size:1vw;
+        font-size:1.5rem;
     }
 
 
@@ -72,7 +72,7 @@
                 position: fixed;
                 margin-left:0.5%;
              
-                font-size: 2vw;
+                font-size: 3rem;
                 
                 
                 
@@ -113,10 +113,10 @@
             }
         }
 
-        @media all and (max-width:767px){
+ @media all and (max-width:767px){
             body{
        
-                font-size: 4vw;
+                font-size: 1rem;
                 font-family: 'Helvetica Neue', sans-serif;
                 -ms-overflow-style: none;
                 overscroll-behavior: none;
@@ -140,6 +140,7 @@
 
             .main iframe{
                 margin-top:15%;
+                margin-bottom:15%;
                 
                 
                 width:100%;
@@ -148,12 +149,13 @@
             }
         
             .info{
-                margin: 0.8% 5% 0 5% ;
+                
+                margin: 3% 5% 0 5% ;
               
             }
         
             .credit{
-                font-size:2.5vw;
+                font-size:0.8rem;
             }
         
         
@@ -195,7 +197,7 @@
                         position: fixed;
                         margin-left:0.5%;
                      
-                        font-size: 5vw;
+                        font-size: 1.3rem;
                         
                         
                         

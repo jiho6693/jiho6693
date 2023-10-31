@@ -43,8 +43,8 @@ a:hover{
   
   .raindrop {
     position: absolute;
-    width: 0.15vw;
-    height: 5vw;
+    width: 0.15rem;
+    height: 8rem;
     background: rgb(93, 93, 93);
     opacity: 0.2;
     animation: fall 0.8s linear infinite;
@@ -82,7 +82,7 @@ a:hover{
     position: fixed;
     margin-left:0.5%;
     color:#000000;
-    font-size: 2vw;
+    font-size: 3rem;
     
    
   
@@ -122,7 +122,7 @@ a:hover{
     position: fixed;
     /* margin-top:-3.5rem;
     margin-bottom: -3.5rem; */
-    font-size: 6.3vw; 
+    font-size: 9.5rem; 
     
     
     left:0.5%;
@@ -133,7 +133,7 @@ a:hover{
 .category1{
     
     position:fixed;
-    font-size: 6.3vw;
+    font-size:9.5rem;
     color:rgb(0, 0, 0);
     bottom: 0;
     left:0.5%;
@@ -175,7 +175,7 @@ a:hover{
 .web{
 
 
-    font-size: 2vw;
+    font-size: 3rem;
    
    }
 
@@ -225,8 +225,8 @@ a:hover{
       
       .raindrop {
         position: absolute;
-        width: 0.15vw;
-        height: 5vw;
+        width: 0.1rem;
+        height: 4rem;
         background: rgb(93, 93, 93);
         opacity: 0.2;
         animation: fall 0.8s linear infinite;
@@ -256,7 +256,7 @@ a:hover{
         position: fixed;
         margin-left:0.5%;
         color:#000000;
-        font-size: 5vw;
+        font-size: 1.3rem;
         
        
       
@@ -292,7 +292,7 @@ a:hover{
         margin: 0.8% 0 0 0;
         position: fixed;
         margin-top:1rem;
-        font-size: 10vw; 
+        font-size: 10rem; 
         
         
         left:0.5%;
@@ -301,9 +301,10 @@ a:hover{
     
     
     .category1{
+        text-align: center;
         
         position:fixed;
-        font-size: 10vw;
+        font-size: 2.5rem;
         color:rgb(0, 0, 0);
         bottom: 0;
         left:0.5%;
@@ -339,7 +340,7 @@ a:hover{
       
         margin-left: 2%;
         margin-right: 2%;
-        font-size: 5vw;
+        font-size: 1.3rem;
         
       
     }
