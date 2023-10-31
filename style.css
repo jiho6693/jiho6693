@@ -248,7 +248,7 @@ a:hover{
     .name{
        
         overflow: hidden;
-        white-space: nowrap;
+       
     
         z-index:1;
         margin-top:0%;
@@ -277,10 +277,10 @@ a:hover{
     
     @keyframes marquee {
         0% {
-            transform: translate(10%, 0);
+            transform: translate(40%, 0);
         }
         100% {
-            transform: translate(0%, 0);
+            transform: translate(-100%, 0);
         }
     }
     
