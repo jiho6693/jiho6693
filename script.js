@@ -62,7 +62,7 @@ function createRaindrop() {
 
   raindrop.addEventListener("animationiteration", () => {
     // 비방울이 화면 하단에 도달하면 제거
-    // raindrop.remove();
+    raindrop.remove();
   });
 }
 
