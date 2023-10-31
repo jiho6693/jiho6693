@@ -338,7 +338,9 @@ a:hover{
     
       
         margin-left: 2%;
+        margin-right: 2%;
         font-size: 5vw;
+        
       
     }
     
@@ -349,6 +351,12 @@ a:hover{
     
        
        }
+
+    .infomobile
+    {
+        position: absolute;
+        right:2%;
+    }
     
 
 

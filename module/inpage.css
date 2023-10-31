@@ -116,7 +116,7 @@
         @media all and (max-width:767px){
             body{
        
-                font-size: 3vw;
+                font-size: 4vw;
                 font-family: 'Helvetica Neue', sans-serif;
                 -ms-overflow-style: none;
                 overscroll-behavior: none;
@@ -148,7 +148,7 @@
             }
         
             .info{
-                margin: 0.8% 9% 0 9% ;
+                margin: 0.8% 5% 0 5% ;
               
             }
         
@@ -161,7 +161,7 @@
             .video{
                 
                 margin: 5% 10% 0% 10% ;
-                width:100%;
+            
             }
         
             .sub {
