@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
 @media all and (min-width:768px){ 
-   
+    svg {
+        position: absolute;
+    } 
 
 body {
     
@@ -13,6 +15,7 @@ body {
     -ms-overflow-style: none;
     overscroll-behavior: none;
     white-space: no-wrap;
+    filter: url(#distort);
     
  }
  
