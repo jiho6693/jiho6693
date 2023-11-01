@@ -2,6 +2,17 @@
 svg {
     position: absolute;
 } 
+.container{
+   
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+
+.item iframe{
+    width:70%;
+}
+
 
     
 @media all and (min-width:768px){ 

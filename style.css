@@ -146,11 +146,16 @@ svg {
 
 
     .box2{
-        /* position: relative; */
+       
         margin: 0 0 0 0;
         height:100vh;
         width: 100%;
-        background: linear-gradient(180deg, #000000 20%,#d8d8d8 60%, #ffffff);
+        background: linear-gradient(180deg, #000000 20%,#d8d8d8 60%, #ffffff),
+        url(./Installation/Cyanotype/C-08.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       
     }
 
     /* .mainimage2 img{
@@ -321,11 +326,12 @@ svg {
     
     
     .box2{
-        /* position: relative; */
+     
         margin: 0 0 0 0;
         height:100vh;
         width: 100%;
         background: linear-gradient(180deg, #000000 20%,#d8d8d8 60%, #ffffff);
+       
     }
     
     /* .mainimage2 img{

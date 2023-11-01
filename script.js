@@ -1,5 +1,8 @@
 
 
+
+
+
 window.addEventListener("scroll", function () {
   const category1 = document.getElementsByClassName("category1")[0]; // Select the first element with class "category1"
   const scrollY = window.scrollY;
