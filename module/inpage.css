@@ -165,7 +165,7 @@ svg {
             .info{
                 position: relative;
                 
-                margin: 2% 5% 0 5% ;
+                margin: 2% 8% 0 5% ;
               
             }
         
@@ -204,9 +204,7 @@ svg {
         .name{
                         
                         overflow: hidden;
-                       
                         z-index:1;
-                            
                         margin-top:0%;
                         padding-top:0%;
                         position: fixed;
