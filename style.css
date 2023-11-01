@@ -184,7 +184,13 @@ a:hover{
 
 @media all and (max-width:767px) 
 {
+
+    svg {
+        position: absolute;
+    }
+
     body {
+        filter: url(#distort);
         margin: 0 0 0 0;
         font-family: 'Helvetica Neue', sans-serif;
        
