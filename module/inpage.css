@@ -5,6 +5,7 @@ svg {
     
 @media all and (min-width:768px){ 
     body{
+        filter: url(#distort);
        
         font-size: 1.8rem;
         font-family: 'Helvetica Neue', sans-serif;
