@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <script src="../module/inpage.js"></script>
+    <style>
+    body {
+      background-color: black;
+      color:white;
+    
+    }
+
+    .item iframe{
+      width:50vw;
+      height: 50vh
+    }
+    
+
+
+   
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+    </div>
+
+    <div class="info">
+        <div class="title"> WEB SKETCH</div>
+        <div class="credit">
+            
+            <br>
+           </div>
+        <div class="description">
+               
+               
+        </div>
+     </div>
+
+     <div class="sub">
+      <div class="container">
+        <div class="item"><a href="https://jiho6693.github.io/rainyorbit/"><iframe src="https://jiho6693.github.io/rainyorbit/" frameborder="0"></iframe><br>Raining<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/day/"><iframe src="https://jiho6693.github.io/day/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/rain-2d/"><iframe src="https://jiho6693.github.io/rain-2d/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/moveinstone/"><iframe src="https://jiho6693.github.io/moveinstone/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/test216/"><iframe src="https://jiho6693.github.io/test216/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        
+        <div class="item"><a href="https://jiho6693.github.io/night/"><iframe src="https://jiho6693.github.io/night/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/midterm/"><iframe src="https://jiho6693.github.io/midterm/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        <div class="item"><a href="https://jiho6693.github.io/ground/"><iframe src="https://jiho6693.github.io/ground/" frameborder="0"></iframe><br>GOOBYE SERVICE<br></a></div>
+        
+      </div>
+    </div>
+
+
+   
+
+    
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+
+
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+       
+
+        const images = [];
+            for (let i = 1; i <= 3; i++) {
+            images.push(`./Cyanotype/C-${i}.jpg`);
+            }
+        
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1000);
+      </script>
+
+</body>
+</html>
