@@ -7,7 +7,7 @@ svg {
 
 @media all and (min-width:768px){ 
     body {
-        filter: url(#distort);
+        /* filter: url(#distort); */
         margin: 0 0 0 0;
         font-family: 'Helvetica Neue', sans-serif;
         color:rgb(0, 0, 0);
@@ -48,8 +48,8 @@ svg {
     
     .raindrop {
         position: absolute;
-        width: 0.15rem;
-        height: 8rem;
+        width: 0.15vw;
+        height: 8vh;
         background: rgb(93, 93, 93);
         opacity: 0.2;
         animation: fall 0.8s linear infinite;
@@ -80,7 +80,7 @@ svg {
         position: fixed;
         margin-left:0.5%;
         color:#000000;
-        font-size: 1.8rem;
+        font-size: 2vw;
         
     
     
@@ -120,7 +120,7 @@ svg {
         position: fixed;
         /* margin-top:-3.5rem;
         margin-bottom: -3.5rem; */
-        font-size: 5.3rem; 
+        font-size: 6.3vw; 
         
         
         left:0.5%;
@@ -131,7 +131,7 @@ svg {
     .category1{
         
         position:fixed;
-        font-size:5.3rem;
+        font-size:6.3vw;
         color:rgb(0, 0, 0);
         bottom: 0;
         left:0.5%;
@@ -173,7 +173,7 @@ svg {
     .web{
 
 
-        font-size: 1.8rem;
+        font-size: 2vw;
     
     }
 
@@ -227,8 +227,8 @@ svg {
       
       .raindrop {
         position: absolute;
-        width: 0.1rem;
-        height: 4rem;
+        width: 0.15vw;
+        height: 5vw;
         background: rgb(93, 93, 93);
         opacity: 0.2;
         animation: fall 0.8s linear infinite;
@@ -258,7 +258,7 @@ svg {
         position: fixed;
         margin-left:0.5%;
         color:#000000;
-        font-size: 1.3rem;
+        font-size: 5vw;
         
        
       
@@ -294,7 +294,7 @@ svg {
         margin: 0.8% 0 0 0;
         position: fixed;
         margin-top:1rem;
-        font-size: 10rem; 
+        font-size: 10vw; 
         
         
         left:0.5%;
@@ -306,7 +306,7 @@ svg {
         text-align: center;
         
         position:fixed;
-        font-size: 2.5rem;
+        font-size: 10vw;
         color:rgb(0, 0, 0);
         bottom: 0;
         left:0.5%;
@@ -342,7 +342,7 @@ svg {
       
         margin-left: 2%;
         margin-right: 2%;
-        font-size: 1.3rem;
+        font-size: 5vw;
         
       
     }

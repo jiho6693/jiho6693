@@ -7,7 +7,7 @@ svg {
 @media all and (min-width:768px){ 
     body{
         filter: url(#distort);  
-        font-size: 1.8rem;
+        font-size: 1.2vw;
         font-family: 'Helvetica Neue', sans-serif;
         -ms-overflow-style: none;
         overscroll-behavior: none;
@@ -16,7 +16,7 @@ svg {
    
 
     .home{
-        font-size:2rem;
+        font-size:2vw;
         position:fixed;
     }
     
@@ -40,7 +40,7 @@ svg {
     }
 
     .credit{
-        font-size:1.5rem;
+        font-size:1.5vw;
     }
 
 
@@ -82,7 +82,7 @@ svg {
                 position: fixed;
                 margin-left:0.5%;
              
-                font-size: 3rem;
+                font-size: 2vw;
                 
                 
                 
@@ -131,7 +131,7 @@ svg {
             body{
                 filter: url(#distort);
        
-                font-size: 1rem;
+                font-size: 4vw;
                 font-family: 'Helvetica Neue', sans-serif;
                 -ms-overflow-style: none;
                 overscroll-behavior: none;
@@ -176,7 +176,7 @@ svg {
             }
         
             .credit{
-                font-size:0.8rem;
+                font-size:2.5vw;
             }
         
         
@@ -215,7 +215,7 @@ svg {
                         padding-top:0%;
                         position: fixed;
                         margin-left:0.5%;
-                        font-size: 1.3rem;
+                        font-size: 5vw;
                         
                         
                         
