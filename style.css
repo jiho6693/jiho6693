@@ -15,7 +15,7 @@ body {
     -ms-overflow-style: none;
     overscroll-behavior: none;
     white-space: no-wrap;
-    filter: url(#distort);
+    /* filter: url(#distort); */
     
  }
  
@@ -181,7 +181,7 @@ a:hover{
 .web{
 
 
-    font-size: 3rem;
+    font-size: 2.7rem;
    
    }
 

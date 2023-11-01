@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-
+svg {
+    position: absolute;
+} 
     
 @media all and (min-width:768px){ 
     body{
@@ -120,6 +122,7 @@
 
  @media all and (max-width:767px){
             body{
+                filter: url(#distort);
        
                 font-size: 1rem;
                 font-family: 'Helvetica Neue', sans-serif;
