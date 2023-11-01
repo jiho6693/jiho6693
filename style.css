@@ -3,19 +3,17 @@
 svg {
     position: absolute;
 } 
-@media all and (min-width:768px){ 
-    
 
+
+@media all and (min-width:768px){ 
 body {
-    
+    filter: url(#distort);
     margin: 0 0 0 0;
     font-family: 'Helvetica Neue', sans-serif;
-    filter: url(#distort);
-   
     color:rgb(0, 0, 0);
     -ms-overflow-style: none;
     overscroll-behavior: none;
-    white-space: no-wrap;
+   
    
     
  }
@@ -82,7 +80,7 @@ a:hover{
     position: fixed;
     margin-left:0.5%;
     color:#000000;
-    font-size: 3rem;
+    font-size: 1.8rem;
     
    
   
@@ -122,7 +120,7 @@ a:hover{
     position: fixed;
     /* margin-top:-3.5rem;
     margin-bottom: -3.5rem; */
-    font-size: 9.5rem; 
+    font-size: 5.3rem; 
     
     
     left:0.5%;
@@ -133,7 +131,7 @@ a:hover{
 .category1{
     
     position:fixed;
-    font-size:9.5rem;
+    font-size:5.3rem;
     color:rgb(0, 0, 0);
     bottom: 0;
     left:0.5%;
@@ -175,7 +173,7 @@ a:hover{
 .web{
 
 
-    font-size: 2.7rem;
+    font-size: 1.8rem;
    
    }
 
