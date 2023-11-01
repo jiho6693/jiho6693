@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jiho6693</title>
+    <title>HOME</title>
+    <svg>
+        <defs>
+            <filter id="distort">
+                <feTurbulence baseFrequency="0.01 0.01" numOctaves="1" result="noise"  />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" xChannelSelector="R" yChannelSelector="R">
+            </filter>
+        </defs>
+    </svg>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script type="text/javascript">
         var UserAgent = navigator.userAgent;
-        if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "index_mb.html"; /* 모바일 홈페이지 경로 */ }
+        if (UserAgent.match(/iPhone|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "index_mb.html"; /* 모바일 홈페이지 경로 */ }
     </script>
     
 </head>
 <body>
+  
     
 <div id="rain"></div>
 
@@ -82,14 +91,7 @@
 </div>
 
 
-<svg>
-    <defs>
-        <filter id="distort">
-            <feTurbulence baseFrequency="0.01 0.01" numOctaves="1" result="noise"  />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" xChannelSelector="R" yChannelSelector="R">
-        </filter>
-    </defs>
-</svg>
+
 
 </body>
 </html>

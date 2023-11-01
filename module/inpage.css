@@ -2,16 +2,18 @@
 svg {
     position: absolute;
 } 
+
     
 @media all and (min-width:768px){ 
     body{
-        filter: url(#distort);
-       
+        filter: url(#distort);  
         font-size: 1.8rem;
         font-family: 'Helvetica Neue', sans-serif;
         -ms-overflow-style: none;
         overscroll-behavior: none;
     }
+
+   
 
     .home{
         font-size:2rem;
@@ -119,6 +121,10 @@ svg {
             filter: blur(10px);
         
             }
+
+            ::-webkit-scrollbar {
+                display: none;
+              }
         }
 
  @media all and (max-width:767px){
