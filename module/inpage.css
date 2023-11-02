@@ -30,8 +30,23 @@ svg {
         font-size:2vw;
         position:fixed;
     }
+
+    .title{
+        margin: -3% 8% 0 8%;
+    }
+
+    .title_labor{
+    
+        text-align: center;
+        font-size: 1.5vw
+    
+        }
     
     .main {
+        text-align: center;   
+    }
+
+    .main_image{
         text-align: center;   
     }
 
@@ -52,6 +67,7 @@ svg {
 
     .credit{
         font-size:1.5vw;
+        margin: 0% 8% 0 8%;
     }
 
 
@@ -157,11 +173,22 @@ svg {
                 text-align: center;   
                 
             }
+
+            .title_labor{
+    
+                text-align: center;
+                font-size: 4vw
+            
+                }
             
             .main img{   
                 margin-top:15%;
                 width:100%;
              
+            }
+
+            .main_image{
+                text-align: center;   
             }
 
             .main_image img{
