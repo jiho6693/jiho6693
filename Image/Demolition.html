@@ -66,8 +66,6 @@
                 document.getElementById('header').innerHTML = data;
             });
  
-           
-            // 이미지 파일의 범위 (g-10부터 g-22까지)
         const startImageNumber = 2;
         const endImageNumber = 5;
         const imageContainer = document.getElementById('imageContainer');
@@ -75,8 +73,8 @@
         // 이미지를 동적으로 생성하여 페이지에 추가
         for (let i = startImageNumber; i <= endImageNumber; i++) {
             const img = document.createElement('img');
-            img.src = './Demolition/d-' + i + '.jpg'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
-            img.alt = '이미지 g-' + i;
+            img.src = './Demolition/d-' + i + '.jpg'; 
+            img.alt = '이미지 d-' + i;
 
             // 이미지를 이미지 컨테이너에 추가
             imageContainer.appendChild(img);
