@@ -29,7 +29,7 @@
     <div id="header"></div>
    
     <div class="main_image">
-       <img src="./Demolition/d-1.jpg">
+       <img src="./Demolition/d-0.jpg">
     </div>
 
     <div class="info">
@@ -66,14 +66,14 @@
                 document.getElementById('header').innerHTML = data;
             });
  
-        const startImageNumber = 2;
-        const endImageNumber = 5;
+        const startImageNumber = 1;
+        const endImageNumber = 4;
         const imageContainer = document.getElementById('imageContainer');
 
         // 이미지를 동적으로 생성하여 페이지에 추가
         for (let i = startImageNumber; i <= endImageNumber; i++) {
             const img = document.createElement('img');
-            img.src = './Demolition/d-' + i + '.jpg'; 
+            img.src = './Demolition/d-' + i +'.jpg'; 
             img.alt = '이미지 d-' + i;
 
             // 이미지를 이미지 컨테이너에 추가
