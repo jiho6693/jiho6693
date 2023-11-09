@@ -4,7 +4,7 @@ function scrollToBottomSlowly() {
   var currentPosition = window.scrollY;
   
   // 스크롤할 거리
-  var scrollStep = 10; // 매 스크롤마다 5px씩 이동
+  var scrollStep = 25; // 매 스크롤마다 5px씩 이동
   
   // 목표 위치 (가장 하단)
   var targetPosition = document.body.scrollHeight - window.innerHeight;
