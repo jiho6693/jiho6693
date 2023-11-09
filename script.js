@@ -1,26 +1,64 @@
-
-function scrollToBottomSlowly() {
+function scrollToBottomWithAcceleration() {
   // 현재 스크롤 위치
   var currentPosition = window.scrollY;
-  
-  // 스크롤할 거리
-  var scrollStep = 25; // 매 스크롤마다 5px씩 이동
-  
+
+  // 스크롤 속도
+  var scrollSpeed = 1; // 초기 스크롤 속도 (1px/ms)
+  var maxSpeed = 50; // 최대 스크롤 속도 (5px/ms)
+  var acceleration = 5; // 스크롤 속도 증가량 (0.02px/ms^2)
+
   // 목표 위치 (가장 하단)
   var targetPosition = document.body.scrollHeight - window.innerHeight;
-  
+
   // 스크롤이 목표 위치에 도달했는지 확인
   if (currentPosition < targetPosition) {
-      // 스크롤할 거리가 남았다면 스크롤을 이동
-      window.scrollTo(0, currentPosition + scrollStep);
+      // 스크롤 속도 증가
+      scrollSpeed += acceleration;
+      // 최대 스피드를 초과하지 않도록 제한
+      if (scrollSpeed > maxSpeed) {
+          scrollSpeed = maxSpeed;
+      }
+      
+      // 스크롤할 거리
+      var scrollDistance = scrollSpeed;
+      
+      // 스크롤을 이동
+      window.scrollTo(0, currentPosition + scrollDistance);
   } else {
       // 목표 위치에 도달하면 setInterval을 멈춤
       clearInterval(scrollInterval);
   }
 }
 
-// 스크롤을 일정 간격으로 천천히 내려가게 설정
-var scrollInterval = setInterval(scrollToBottomSlowly, 20); // 100 밀리초 (0.1초)마다 스크롤
+// 스크롤을 일정 간격으로 가속도를 느끼며 내려가게 설정
+var scrollInterval = setInterval(scrollToBottomWithAcceleration, 10); // 10 밀리초 (0.01초)마다 스크롤
+
+
+
+
+
+// function scrollToBottomSlowly() {
+//   // 현재 스크롤 위치
+//   var currentPosition = window.scrollY;
+  
+//   // 스크롤할 거리
+//   var scrollStep = 25; // 매 스크롤마다 5px씩 이동
+  
+//   // 목표 위치 (가장 하단)
+//   var targetPosition = document.body.scrollHeight - window.innerHeight;
+  
+//   // 스크롤이 목표 위치에 도달했는지 확인
+//   if (currentPosition < targetPosition) {
+//       // 스크롤할 거리가 남았다면 스크롤을 이동
+//       window.scrollTo(0, currentPosition + scrollStep);
+//   } else {
+//       // 목표 위치에 도달하면 setInterval을 멈춤
+//       clearInterval(scrollInterval);
+//   }
+// }
+
+// // 스크롤을 일정 간격으로 천천히 내려가게 설정
+// var scrollInterval = setInterval(scrollToBottomSlowly, 20); // 100 밀리초 (0.1초)마다 스크롤
 
 
 // window.addEventListener("scroll", function () {
