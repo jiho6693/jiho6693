@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap');
+
 svg {
     position: absolute;
 } 
@@ -11,7 +13,8 @@ svg {
     body {
     
         margin: 0 0 0 0;
-        font-family: 'Helvetica Neue', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-weight:700;
        
         color:rgb(0, 0, 0);
         -ms-overflow-style: none;
@@ -164,7 +167,7 @@ svg {
     
     
     .index{
-        filter: url(#distort);
+            filter: url(#distort);
       
         margin-left: 2%;
         margin-right: 2%;
