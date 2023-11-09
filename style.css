@@ -7,7 +7,7 @@ svg {
 
 
     body {
-        /* filter: url(#distort); */
+        filter: url(#distort);
         margin: 0 0 0 0;
         font-family: 'Helvetica Neue', sans-serif;
         color:rgb(0, 0, 0);
@@ -133,7 +133,7 @@ svg {
         position:fixed;
         font-size:6.3vw;
         color:rgb(0, 0, 0);
-        bottom: 0;
+        bottom: 0%;
         left:0.5%;
     }
 
@@ -150,7 +150,8 @@ svg {
         margin: 0 0 0 0;
         height:100vh;
         width: 100%;
-        background: linear-gradient(180deg, #000000 20%,#d8d8d8 60%, #ffffff),
+        background: linear-gradient(180deg, #0401df 20%,#d8d8d8 90%, #ffffff),
+        /* background: linear-gradient(180deg, #000000 20%,#d8d8d8 60%, #ffffff), */
         url(./Installation/Cyanotype/C-08.jpg);
         background-size: cover;
         background-position: center;

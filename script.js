@@ -2,22 +2,23 @@
 
 
 
+// window.addEventListener("scroll", function () {
+//   const category1 = document.getElementsByClassName("category1")[0]; // Select the first element with class "category1"
+//   const scrollY = window.scrollY;
 
-window.addEventListener("scroll", function () {
-  const category1 = document.getElementsByClassName("category1")[0]; // Select the first element with class "category1"
-  const scrollY = window.scrollY;
+//   // Define a scroll threshold (adjust the value as needed)
+//   const scrollThreshold = 10;
 
-  // Define a scroll threshold (adjust the value as needed)
-  const scrollThreshold = 10;
+//   if (scrollY > scrollThreshold) {
+//     // Hide the "category1" div by adding a CSS class
+//     category1.classList.add("hidden");
+//   } else {
+//     // Show the "category1" div by removing the CSS class
+//     category1.classList.remove("hidden");
+//   }
+// });
 
-  if (scrollY > scrollThreshold) {
-    // Hide the "category1" div by adding a CSS class
-    category1.classList.add("hidden");
-  } else {
-    // Show the "category1" div by removing the CSS class
-    category1.classList.remove("hidden");
-  }
-});
+
 
 // function createRaindrop() {
 //   const raindrop = document.createElement("div");
