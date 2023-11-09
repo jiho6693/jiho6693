@@ -1,5 +1,26 @@
 
+function scrollToBottomSlowly() {
+  // 현재 스크롤 위치
+  var currentPosition = window.scrollY;
+  
+  // 스크롤할 거리
+  var scrollStep = 10; // 매 스크롤마다 5px씩 이동
+  
+  // 목표 위치 (가장 하단)
+  var targetPosition = document.body.scrollHeight - window.innerHeight;
+  
+  // 스크롤이 목표 위치에 도달했는지 확인
+  if (currentPosition < targetPosition) {
+      // 스크롤할 거리가 남았다면 스크롤을 이동
+      window.scrollTo(0, currentPosition + scrollStep);
+  } else {
+      // 목표 위치에 도달하면 setInterval을 멈춤
+      clearInterval(scrollInterval);
+  }
+}
 
+// 스크롤을 일정 간격으로 천천히 내려가게 설정
+var scrollInterval = setInterval(scrollToBottomSlowly, 20); // 100 밀리초 (0.1초)마다 스크롤
 
 
 // window.addEventListener("scroll", function () {
