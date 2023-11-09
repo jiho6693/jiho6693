@@ -21,6 +21,8 @@ svg {
     
         
     }
+
+    
     
     ::-webkit-scrollbar {
     display: none;
@@ -74,6 +76,7 @@ svg {
 
 
     .name{
+        filter: url(#distort);
     
         overflow: hidden;
         white-space: nowrap;
@@ -118,6 +121,7 @@ svg {
     }
 
     .info {
+        filter: url(#distort);
         
         color:#000000;
         margin: 0.8% 0 0 0;
@@ -173,6 +177,7 @@ svg {
 
 
     .index{
+        filter: url(#distort);
 
         font-family: 'Raleway', sans-serif;
         font-weight:800;
