@@ -7,7 +7,7 @@ svg {
 
 
     body {
-        filter: url(#distort);
+        /* filter: url(#distort); */
         margin: 0 0 0 0;
         font-family: 'Helvetica Neue', sans-serif;
         color:rgb(0, 0, 0);

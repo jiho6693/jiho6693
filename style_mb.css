@@ -9,7 +9,7 @@ svg {
    
 
     body {
-        filter: url(#distort);
+    
         margin: 0 0 0 0;
         font-family: 'Helvetica Neue', sans-serif;
        
@@ -71,6 +71,7 @@ svg {
 
     
     .name{
+        filter: url(#distort);
        
         overflow: hidden;
        
@@ -112,6 +113,7 @@ svg {
 
     
     .info {
+        
         
         color:#000000;
         margin: 0.8% 0 0 0;
@@ -162,7 +164,7 @@ svg {
     
     
     .index{
-    
+        filter: url(#distort);
       
         margin-left: 2%;
         margin-right: 2%;
