@@ -25,7 +25,7 @@ svg {
      }
 
      .back {
-        
+        overflow:hidden;
         filter: blur(10px);
         font-size: 100vw;
         color:rgb(251, 0, 0);
