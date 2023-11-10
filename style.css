@@ -26,7 +26,7 @@ svg {
     .back {
         
         filter: blur(10px);
-        font-size: 40vw;
+        font-size: 50vw;
         color:rgb(251, 0, 0);
         font-family: 'Linefont';
         font-weight: 100;

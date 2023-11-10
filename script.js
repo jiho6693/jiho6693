@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
   for (var i = 0; i < elements.length; i++) {
       setInterval(function (element) {
           randomizeText(element);
-      }, 500, elements[i]); // 5000ms(5초) 간격으로 변경 (원하는 간격으로 수정 가능)
+      }, 1500, elements[i]); // 5000ms(5초) 간격으로 변경 (원하는 간격으로 수정 가능)
   }
 });
 
