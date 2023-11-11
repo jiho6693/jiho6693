@@ -1,11 +1,17 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Linefont:wght@100&display=swap');
 
-svg {
-    position: absolute;
-} 
+@font-face{
+    font-family:"Linefont";
+    src:url(./font/Linefont-Thin.ttf); 
+    
+}
+
+    svg {
+        position: absolute;
+    } 
 
 
 
@@ -30,7 +36,7 @@ svg {
         font-size: 100vw;
         color:rgb(251, 0, 0);
         font-family: 'Linefont';
-        font-weight: 100;
+        
     }
      
     ::-webkit-scrollbar {
