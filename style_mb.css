@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Linefont:wght@100&display=swap');
 
 @font-face{
-    font-family:"Linefont";
+    font-family:"Linefont ttf";
     src:url(./font/Linefont-Thin.ttf); 
     
 }
@@ -35,7 +35,8 @@
         filter: blur(10px);
         font-size: 100vw;
         color:rgb(251, 0, 0);
-        font-family: 'Linefont';
+        font-family: 'Linefont ttf';
+        font-weight: 100;
         
     }
      
