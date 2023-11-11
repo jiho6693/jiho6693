@@ -10,8 +10,12 @@
   
         .main_image{
         text-align: center;   
+        
     }
     
+    .main_image img{
+        width: 48%;
+    }
     
    
     </style>
@@ -21,7 +25,9 @@
     <div id="header"></div>
    
     <div class="main_image">
-        <div id="imageContainer"></div>
+        <img src="Compression/1.png"><br>
+        <img src="Compression/2.png"><br>
+        <!-- <div id="imageContainer"></div> -->
     </div>
 
     <div class="info">
@@ -56,14 +62,14 @@
            
             // 이미지 파일의 범위 (g-10부터 g-22까지)
         const startImageNumber = 1;
-        const endImageNumber = 4;
+        const endImageNumber = 2;
         const imageContainer = document.getElementById('imageContainer');
 
         // 이미지를 동적으로 생성하여 페이지에 추가
         for (let i = startImageNumber; i <= endImageNumber; i++) {
             const img = document.createElement('img');
-            img.src = './Movinghouse/m-' + i + '.jpg'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
-            img.alt = '이미지 g-' + i;
+            img.src = './Compression/' + i + '.png'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
+            img.alt = 'compression' + i;
 
             // 이미지를 이미지 컨테이너에 추가
             imageContainer.appendChild(img);
