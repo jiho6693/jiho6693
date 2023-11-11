@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <script src="../module/inpage.js"></script>
+    <style>
+    body {
+      background-color: black;
+      color:white;
+    
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="main">
+        <img src="./Wall/1.jpg">
+    </div>
+<br><br>
+    <div class="info">
+        <div class="title"> Goodbye Service, 4K video, colour, sound, 22’ 32”, 2020</div>
+        <div class="credit">
+            
+            <br>
+            Director / Ji-ho Park
+            <br>
+            Performer / Ji-ho park, Taeho Kim, Dong-pil Jang
+            <br>
+            Camera / Weon Jeongin, Jisu kim, shihyun Cha, Donghyun lee, Wookyung Jeon
+            <br>
+            Special Thanks to Jewyo rhii</div>
+        <div class="description">
+                <br> During the exhibition's de-installation, I dealt with unwanted artworks and contemplated disposal methods from the start. I created a versatile incinerator to handle various art pieces, adjusting its structure as needed. On the final de-installation day, we processed the artworks in a procession, giving a symbolic farewell to these once-monumental objects. The incinerator, too, left the museum after serving its purpose. It was disassembled, with salvageable parts sold and the rest disposed of.
+        </div>
+     </div>
+
+    <div class="sub">
+      <div id="imageContainer"></div>
+
+    </div>
+    
+    <div class="video">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/746895432?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Goodbye Service (Clip Version)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+       // 이미지 파일의 범위 (g-10부터 g-22까지)
+       const startImageNumber = 1;
+        const endImageNumber = 5;
+        const imageContainer = document.getElementById('imageContainer');
+
+        // 이미지를 동적으로 생성하여 페이지에 추가
+        for (let i = startImageNumber; i <= endImageNumber; i++) {
+            const img = document.createElement('img');
+            img.src = './Wall/' + i + '.jpg'; // 이미지 파일 이름 예: g-10.jpg, g-11.jpg, ...
+            img.alt = 'wa;;' + i;
+
+            // 이미지를 이미지 컨테이너에 추가
+            imageContainer.appendChild(img);
+        }
+
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+            const images = [];
+            for (let i = 1; i <= 5; i++) {
+            images.push(`./Wall/${i}.jpg`);
+            }
+        
+        
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1500);
+      </script>
+
+</body>
+</html>
