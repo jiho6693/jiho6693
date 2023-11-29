@@ -7,109 +7,88 @@
     <link rel="stylesheet" href="../module/inpage.css">
     <script src="../module/inpage.js"></script>
     <style>
-  
-        .main_image{
-        text-align: center;   
-    }
+       
 
-    .main_image img{
-        width:100%;
-    }
-    
-    
+        body {
+            background-color: black;
+            color:aliceblue;
+           
+        }
 
-    .title{
-        margin: 3% 8% 0 8%;
-    }
-   
-    .description{
-        margin: 0 8% 0 8%;
-    }
-   
+        .main_image {
+
+            text-align: center;
+            
+        }
+
+        .main_image img {
+            margin-bottom: 3%;
+            width: 70%;
+            transition: transform 0.5s ease-in-out;
+            cursor: zoom-in;
+        }
+
+        .main_image img.zoomed {
+            transform: scale(10);
+            z-index: 0;
+        }
+
+        .drawing{
+        font-size:1.5vw;
+        margin-left:0.5vw;
+        }
+
+        
     </style>
 </head>
 
 <body>
     <div id="header"></div>
-   
-    <div class="main_image">
-       <img src="./Drawing/fire.jpg">
-    </div>
-
-    <div class="info">
-        <div class="title"> Demolition, Photography, 2019, MMCA</div>
-        <div class="credit">
-            
-            <br>
-            </div>
-        <div class="description">
-           This is a photograph taken at the National Museum of Modern and Contemporary Art showing the space being dismantled after the exhibition.
-        </div>
-     </div>
-
-     <div class="main_image">
-        <div id="imageContainer"></div>
-    </div>
-
-   
-
+ 
  
     
-    <div class="mark"> 
-        © JI-HO PARK
+   
+        
+
+    <div class="main_image">
+        <img src="Drawing/drawing1.png" onclick="toggleImageSize(event)">
+        <img src="Drawing/drawing2.png" onclick="toggleImageSize(event)">
+        <img src="Drawing/drawing10.png"onclick="toggleImageSize(event)">
+        <img src="Drawing/drawing4.png"onclick="toggleImageSize(event)">
+
+       
+        
     </div>
-    
-    
+
+    <div class="drawing">
+        <br><br> <a href="./DrawingSeries.html">More drawings - > - ></a> 
+    </div>
+   
+
+        
+  
+
     <script>
-
-
-        // 모듈을 가져와서 삽입합니다.
+        
         fetch('../module/header')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             });
- 
-        const startImageNumber = 2;
-        const endImageNumber = 4;
-        const imageContainer = document.getElementById('imageContainer');
 
-        // 이미지를 동적으로 생성하여 페이지에 추가
-        for (let i = startImageNumber; i <= endImageNumber; i++) {
-            const img = document.createElement('img');
-            img.src = './Drawing/d-' + i +'.jpg'; 
-            img.alt = '이미지 d-' + i;
+        function toggleImageSize(event) {
+            const image = event.target;
 
-            // 이미지를 이미지 컨테이너에 추가
-            imageContainer.appendChild(img);
+            if (image.classList.contains('zoomed')) {
+                // 축소
+                image.classList.remove('zoomed');
+                image.style.cursor = "zoom-in";
+            } else {
+                // 확대
+                image.classList.add('zoomed');
+                image.style.cursor = "zoom-out";
+            }
         }
-
-
-//         const images = [];
-//         for (let i = 1; i <= 5; i++) {
-//   images.push(`./Demolition/d-${i}.jpg`);
-// }
-        
-//         let currentIndex = 0;
-//         const imageElement = document.querySelector(".main img");
-        
-//         function showImage(index) {
-//           imageElement.src = images[index];
-//         }
-        
-//         function nextImage() {
-//           currentIndex = (currentIndex + 1) % images.length;
-//           showImage(currentIndex);
-//         }
-        
-//         function previousImage() {
-//           currentIndex = (currentIndex - 1 + images.length) % images.length;
-//           showImage(currentIndex);
-//         }
-        
-//         // Automatically slide to the next image every 5 seconds
-//         setInterval(nextImage, 1000);
-      </script>
-
+    </script>
 </body>
 </html>
