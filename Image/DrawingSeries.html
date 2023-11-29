@@ -16,6 +16,7 @@
         }
 
         .main_image {
+           
 
             text-align: center;
             
@@ -23,20 +24,18 @@
 
         .main_image img {
             margin-bottom: 3%;
-            width: 50%;
             transition: transform 0.5s ease-in-out;
             cursor: zoom-in;
         }
 
         .main_image img.zoomed {
             transform: scale(10);
-            z-index: 1; /* 다른 이미지 위에 표시되도록 설정 */
+            z-index: 0; /* 다른 이미지 위에 표시되도록 설정 */
         }
 
-        .drawing{
-        font-size:1.5vw;
-        margin-left:0.5vw;
-        }
+        
+
+       
 
         
     </style>
@@ -70,8 +69,10 @@
     </div>
 
     
-   
-
+    <div class="drawing">
+        <br><br> <a href="./Drawing.html">Back </a> 
+    </div>
+    <br><br>
         
   
 
