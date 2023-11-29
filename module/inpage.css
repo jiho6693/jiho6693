@@ -100,6 +100,11 @@ svg {
   display: none;
 }
 
+.drawing{
+    font-size:2vw;
+    margin-left:0.5vw;
+    }
+
                
 
 .name{
@@ -160,6 +165,7 @@ svg {
 
  @media all and (max-width:767px){
             body{
+                
                 filter: url(#distort);
        
                 font-size: 4vw;
@@ -174,6 +180,7 @@ svg {
             }
              */
             .main {
+            
                 text-align: center;   
                 
             }
@@ -246,6 +253,11 @@ svg {
             ::-webkit-scrollbar {
           display: none;
         }
+
+        .drawing{
+            font-size:2.5vw;
+            margin-left:0.5vw;
+            }
         
                        
         
@@ -254,6 +266,7 @@ svg {
                         overflow: hidden;
                         z-index:1;
                         margin-top:0%;
+                        
                         padding-top:0%;
                         position: fixed;
                         margin-left:0.5%;
@@ -272,7 +285,7 @@ svg {
         
         
                         display: inline-block;
-                        animation: marquee 5s linear infinite;
+                        animation: marquee 15s linear infinite;
                         
                         }
         
