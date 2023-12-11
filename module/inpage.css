@@ -20,7 +20,7 @@ svg {
     
 @media all and (min-width:768px){ 
     body{
-        filter: url(#distort);  
+       
         font-size: 2vw;
         font-family: 'Raleway', sans-serif;
         font-weight:700;
@@ -166,7 +166,7 @@ svg {
  @media all and (max-width:767px){
             body{
                 
-                filter: url(#distort);
+              
        
                 font-size: 4vw;
                 font-family: 'Raleway', sans-serif;
