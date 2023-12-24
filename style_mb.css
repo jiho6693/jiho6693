@@ -108,8 +108,8 @@
         filter: url(#distort);
        
         overflow: hidden;
-       
-
+        
+        
         z-index:1;
         margin-top:0%;
         margin-bottom:0%;
@@ -153,7 +153,7 @@
         margin: 0.8% 0 0 0;
         position: fixed;
         margin-top:1rem;
-        font-size: 10vw; 
+        font-size: 18vw; 
         
         
         left:0.5%;
