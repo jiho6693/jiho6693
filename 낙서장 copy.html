@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jiho6693</title>
+
+    <style>
+        #rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: transparent;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 0.15vw;
+            height: 5vw;
+            background: rgb(93, 93, 93);
+            opacity: 0.2;
+            animation: fall 0.8s linear infinite;
+        }
+
+        .water-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+        }
+
+        .water {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: blue; /* Change to the desired water color */
+            opacity: 0.6;
+            mask: url(#wave-mask);
+            animation: ripple 2s linear infinite alternate;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px); /* Adjust the wave height as needed */
+            }
+        }
+    </style>
+
+    <script>
+        function createRaindrop() {
+            const raindrop = document.createElement("div");
+            raindrop.className = "raindrop";
+            raindrop.style.left = `${Math.random() * 100}%`;
+            document.getElementById("rain").appendChild(raindrop);
+
+            // 비방울이 물에 닿았을 때 이벤트 처리
+            function handleRaindropAnimationEnd() {
+                raindrop.removeEventListener("animationiteration", handleRaindropAnimationEnd);
+                raindrop.removeEventListener("animationend", handleRaindropAnimationEnd);
+
+                // 비방울 제거
+                raindrop.remove();
+
+                // 물을 생성하고 화면 하단에 배치
+                const waterContainer = document.querySelector(".water-container");
+                const water = document.createElement("div");
+                water.className = "water";
+                waterContainer.appendChild(water);
+                fillWater();
+            }
+
+            raindrop.addEventListener("animationiteration", handleRaindropAnimationEnd);
+            raindrop.addEventListener("animationend", handleRaindropAnimationEnd);
+        }
+
+        // 물을 채우는 함수
+        function fillWater() {
+            const waterContainer = document.querySelector(".water-container");
+            const waterLevel = waterContainer.offsetHeight;
+
+            // 물의 높이를 조절할 수 있도록 스타일을 설정
+            waterContainer.style.height = `${waterLevel + 1}px`; // 높이를 10px 증가시킴
+        }
+
+        // 일정 시간마다 물방울을 생성
+        setInterval(createRaindrop, 100); // 빗방울 생성 간격을 줄임
+    </script>
+</head>
+<body>
+    <div id="rain"></div>
+    <div class="water-container">
+        <div class="water"></div>
+    </div>
+    <!-- SVG mask for the wave effect -->
+    <svg width="0" height="0">
+        <defs>
+            <mask id="wave-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                <path d="M0,50 C25,30 75,30 100,50 L100,100 L0,100 Z" fill="black" />
+            </mask>
+        </defs>
+    </svg>
+</body>
+</html>

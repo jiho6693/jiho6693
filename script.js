@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const category1 = document.querySelector(".category1");
+  let isScrolling;
+
+  function handleScroll() {
+      // Clear the previous timeout to avoid rapid toggling
+      clearTimeout(isScrolling);
+
+      // Show the "category1" div if found
+      if (category1) {
+          category1.style.opacity = 1;
+
+          // Set a timeout to hide the "category1" div after 1000 milliseconds (adjust the value as needed)
+          isScrolling = setTimeout(function () {
+              category1.style.opacity = 0;
+          }, 500);
+      }
+  }
+
+  // Attach the scroll event to the window object
+  window.addEventListener("scroll", handleScroll);
+});
+
 // var fontSize = 20;
 
 // window.addEventListener('scroll', function () {
@@ -59,7 +82,6 @@
 
 
 
-
 // function scrollToBottomSlowly() {
 //   // 현재 스크롤 위치
 //   var currentPosition = window.scrollY;
@@ -84,52 +106,38 @@
 // var scrollInterval = setInterval(scrollToBottomSlowly, 20); // 100 밀리초 (0.1초)마다 스크롤
 
 
-window.addEventListener("scroll", function () {
-  const category1 = document.getElementsByClassName("category1")[0]; // Select the first element with class "category1"
-  const scrollY = window.scrollY;
 
-  // Define a scroll threshold (adjust the value as needed)
-  const scrollThreshold = 10;
 
-  if (scrollY > scrollThreshold) {
-    // Hide the "category1" div by adding a CSS class
-    category1.classList.add("hidden");
-  } else {
-    // Show the "category1" div by removing the CSS class
-    category1.classList.remove("hidden");
-  }
-});
+// // 페이지 로드 시 실행
+// document.addEventListener('DOMContentLoaded', function () {
+//   // 대상 클래스 선택
+//   var elements = document.getElementsByClassName('back');
 
-// 페이지 로드 시 실행
-document.addEventListener('DOMContentLoaded', function () {
-  // 대상 클래스 선택
-  var elements = document.getElementsByClassName('back');
+//   // 클래스가 적용된 모든 요소에 대해 일정 간격으로 텍스트 변경
+//   for (var i = 0; i < elements.length; i++) {
+//       setInterval(function (element) {
+//           randomizeText(element);
+//       }, 3000, elements[i]); // 5000ms(5초) 간격으로 변경 (원하는 간격으로 수정 가능)
+//   }
+// });
 
-  // 클래스가 적용된 모든 요소에 대해 일정 간격으로 텍스트 변경
-  for (var i = 0; i < elements.length; i++) {
-      setInterval(function (element) {
-          randomizeText(element);
-      }, 3000, elements[i]); // 5000ms(5초) 간격으로 변경 (원하는 간격으로 수정 가능)
-  }
-});
+// // 랜덤 텍스트 생성 및 적용 함수
+// function randomizeText(element) {
+//   // 원본 텍스트 가져오기
+//   var originalText = element.innerText;
 
-// 랜덤 텍스트 생성 및 적용 함수
-function randomizeText(element) {
-  // 원본 텍스트 가져오기
-  var originalText = element.innerText;
+//   // 랜덤한 인덱스 생성
+//   var randomIndex = Math.floor(Math.random() * originalText.length);
 
-  // 랜덤한 인덱스 생성
-  var randomIndex = Math.floor(Math.random() * originalText.length);
+//   // 랜덤한 글자 생성
+//   var randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 
-  // 랜덤한 글자 생성
-  var randomChar = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+//   // 텍스트를 랜덤한 글자로 대체
+//   var newText = originalText.substring(0, randomIndex) + randomChar + originalText.substring(randomIndex + 1);
 
-  // 텍스트를 랜덤한 글자로 대체
-  var newText = originalText.substring(0, randomIndex) + randomChar + originalText.substring(randomIndex + 1);
-
-  // 대체된 텍스트를 요소에 적용
-  element.innerText = newText;
-}
+//   // 대체된 텍스트를 요소에 적용
+//   element.innerText = newText;
+// }
 
 
 
@@ -159,7 +167,7 @@ function randomizeText(element) {
 //   raindrop.addEventListener("animationend", handleRaindropAnimationEnd);
 // }
 
-// 물을 채우는 함수
+// // 물을 채우는 함수
 // function fillWater() {
 //   const waterContainer = document.querySelector(".water-container");
 //   const waterLevel = waterContainer.offsetHeight;
