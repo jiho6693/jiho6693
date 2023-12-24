@@ -52,10 +52,10 @@
       }
     
     a:hover{
-        filter: blur(20px);
+        /* filter: blur(20px);
         color: rgb(0, 0, 0);
         -webkit-transition: 0.3s;
-        transition: 0.3s;
+        transition: 0.3s; */
     }
     
     #rain {
