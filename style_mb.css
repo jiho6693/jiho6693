@@ -99,7 +99,7 @@
         z-index:1;
         margin-top:0%;
         padding-top:0%;
-        position: fixed;
+        position: absolute;
         margin-left:0.5%;
         color:#000000;
         font-size: 5vw;
@@ -117,7 +117,7 @@
     
      
         display: inline-block;
-        animation: marquee 5s linear infinite;
+        animation: marquee 20s linear infinite;
         
     }
     
@@ -168,9 +168,9 @@
     .box2{
      
         margin: 0 0 0 0;
-        height:100vh;
+        height:5vh;
         width: 100%;
-        background: linear-gradient(180deg, #0401df 20%,#d8d8d8 90%, #ffffff);
+        background: linear-gradient(180deg, #0401df 5%,#d8d8d8 30%, #ffffff);
        
     }
     
