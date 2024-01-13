@@ -17,6 +17,7 @@ svg {
         font-weight:700;
         /* font-family: 'Helvetica Neue', sans-serif; */
         color:rgb(0, 0, 0);
+        overflow: hidden;
         -ms-overflow-style: none;
         overscroll-behavior: none;
     
@@ -24,9 +25,33 @@ svg {
         
     }
 
+    iframe{
+        border: 0;
+    }
+
+    hr{
+        border-top: 2px solid #000000;
+    }
+
+    .line{
+        border: 0px;
+    
+        filter: url(#distort);
+    }
+
+    .v-line {
+   
+        position:fixed;
+        filter: url(#distort);
+        border-left : 2px solid #000000;
+        left: 50%;
+        height : 100%;
+      }
+
+
     .all{
         display: grid;
-        grid-template-columns: 1fr 1.6fr;
+        grid-template-columns: 1fr 1fr;
         overflow-x: hidden;
     }
 
@@ -38,7 +63,7 @@ svg {
 
     .right {
         overflow-y: auto;
-        max-height: 100vh;
+        max-height: 100%;
         flex: 0 0 50%; /* Adjust the percentage as needed */
     }
 
@@ -161,16 +186,8 @@ svg {
 
 
 
- 
 
-
-    .v-line {
-        filter: url(#distort);
-        border-left : thick solid #32a1ce;
-        left: 60%;
-        height : 500px;
-      }
-
+   
     /* .mainimage2 img{
         margin: 0 0 0 0;
         width:100%;
@@ -186,7 +203,7 @@ svg {
        
         filter: url(#distort);
         font-family: 'Raleway', sans-serif;
-        font-weight:800;
+        font-weight:500;
         margin-left: 1%;
         font-size: 1.5vw;
         display: grid;
