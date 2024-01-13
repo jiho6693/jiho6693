@@ -36,7 +36,7 @@ svg {
     }
 
     .title{
-        margin: -3% 8% 0 8%;
+        margin: -3% 0% 0 0%;
     }
 
     .title_labor{
@@ -60,12 +60,12 @@ svg {
     }
     
     .main img{
-        margin-top:3%;
-       width:85%;
+        
+       width:98%;
     }
 
     .info{
-        margin: 0.8% 9% 0 9% ;
+        margin: 0.8% 0% 0 1% ;
       
     }
 
