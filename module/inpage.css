@@ -47,14 +47,17 @@ svg {
         }
     
     .main {
+        
         text-align: center;   
     }
 
     .main_image{
+        
         text-align: center;   
     }
 
     .main_image img{
+        
         margin-top:2.5%;
        width:95%;
     }
