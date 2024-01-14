@@ -34,7 +34,7 @@ svg {
     }
 
     hr{
-        border: 2px solid #000000;
+        border: 1.5px solid #000000;
     
 
   
@@ -50,7 +50,7 @@ svg {
    
         position:fixed;
         filter: url(#distort);
-        border: 2px solid #000000;
+        border: 1.5px solid #000000;
         left: 33%;
         height : 100%;
       }
