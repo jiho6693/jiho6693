@@ -140,16 +140,16 @@ svg {
 
     
         display: inline-block;
-        animation: marquee 20s linear infinite;
+        animation: marquee 120s linear infinite;
         
     }
 
     @keyframes marquee {
         0% {
-            transform: translate(100%, 0);
+            transform: translate(0%, 0);
         }
         100% {
-            transform: translate(-150%, );
+            transform: translate(-100%,0 );
         }
     }
 
