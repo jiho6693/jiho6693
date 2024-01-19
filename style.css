@@ -173,7 +173,44 @@ svg {
  
 
 
+    @media all and (max-width:767px){
 
+        body {
+            /* filter: url(#distort); */
+            margin: 0 0 0 0;
+            font-size: 2.5vw;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:600;
+            /* font-family: 'Helvetica Neue', sans-serif; */
+            color:rgb(0, 0, 0);
+            overflow: hidden;
+            -ms-overflow-style: none;
+            overscroll-behavior: none;
+            
+        
+        
+            
+        }
+        
+        .name{
+
+            filter: url(#distort);
+        
+            overflow: hidden;
+            white-space: nowrap;
+    
+           
+            margin-top:0%;
+            padding-top:0%;
+            position: fixed;
+          
+            
+            font-size: 3vw;
+            
+        
+        
+        }
+    }
     
   
    
