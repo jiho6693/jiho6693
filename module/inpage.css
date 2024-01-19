@@ -19,7 +19,7 @@ svg {
 @media all and (min-width:768px){ 
     body{
        
-        font-size: 1.5vw;
+        font-size: 1.4vw;
         font-family: 'Montserrat', sans-serif;
         -ms-overflow-style: none;
         overscroll-behavior: none;

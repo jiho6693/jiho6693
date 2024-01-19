@@ -28,7 +28,7 @@ svg {
     }
 
     hr{
-        border: 2px solid #000000;
+        border: 0.25vh solid #000000;
     
 
   
@@ -45,7 +45,7 @@ svg {
    
         position:fixed;
         filter: url(#distort);
-        border: 2px solid #000000;
+        border: 0.25vh solid #000000;
         left: 19.7%;
         height : 100%;
       }
@@ -73,6 +73,7 @@ svg {
     
         
     .category10{
+        text-decoration: line-through;
     
         /* font-weight: bold; */
     margin-left:3%;

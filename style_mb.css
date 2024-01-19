@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Linefont:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:wght@500&display=swap');
 
 @font-face{
     font-family:"Linefont ttf";
@@ -15,14 +16,19 @@
 
     
 
-   
+    hr{
+        border: 0.2vh solid #000000;
+    
+
+  
+    }
 
     body {
       
   
         margin: 0 0 0 0;
-        font-family: 'Raleway', sans-serif;
-        font-weight:700;
+        font-family: 'Montserrat', sans-serif;
+        /* font-weight:700; */
        
         color:rgb(0, 0, 0);
      
@@ -38,9 +44,9 @@
         height: 100vh;
         width: 100%;
         position: fixed;
-        background: linear-gradient(360deg, #000dff 0.5%, #d8d8d8 50%, #ffffff);
+        /* background: linear-gradient(360deg, #000dff 0.5%, #d8d8d8 50%, #ffffff);
         opacity: 0;
-        transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out; */
       }
    
 
@@ -159,7 +165,18 @@
         left:0.5%;
     
     }
+
     
+    
+    a:hover{
+     
+        text-decoration: line-through;
+     
+        /* filter: url(#distort); */
+  
+         
+       
+    }
     
   
     
@@ -181,8 +198,8 @@
     .index{
         filter: url(#distort);
         margin-top:-5%;
-        margin-left: 2%;
-        margin-right: 2%;
+      
+        
         font-size: 5vw;
         
       
@@ -190,11 +207,16 @@
     
     .web{
         padding-top:5%;
-    
+        
     
     
        
        }
+
+    .project{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 
     .infomobile
     {
