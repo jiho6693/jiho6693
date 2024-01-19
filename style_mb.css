@@ -219,6 +219,7 @@
 
     .infomobile
     {
+        text-decoration: line-through;
         position: absolute;
         right:3%;
     }
