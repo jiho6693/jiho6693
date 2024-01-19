@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Linefont:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:wght@500&display=swap');
 svg {
     position: absolute;
@@ -11,9 +9,8 @@ svg {
     body {
         /* filter: url(#distort); */
         margin: 0 0 0 0;
-        font-size: 1.2vw;
-        font-family: 'Raleway', sans-serif;
-        font-weight:500;
+        font-size: 1.25vw;
+        font-family: 'Montserrat', sans-serif;
         /* font-family: 'Helvetica Neue', sans-serif; */
         color:rgb(0, 0, 0);
         overflow: hidden;
@@ -31,7 +28,7 @@ svg {
     }
 
     hr{
-        border: 0.25vh solid #000000;
+        border: 2px solid #000000;
     
 
   
@@ -48,7 +45,7 @@ svg {
    
         position:fixed;
         filter: url(#distort);
-        border: 0.25vh solid #000000;
+        border: 2px solid #000000;
         left: 19.7%;
         height : 100%;
       }
@@ -76,7 +73,7 @@ svg {
     
         
     .category10{
-        text-decoration: line-through;
+        text-decoration:  line-through;
     
         /* font-weight: bold; */
     margin-left:3%;
