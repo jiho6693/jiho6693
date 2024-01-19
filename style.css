@@ -9,7 +9,7 @@ svg {
     body {
         /* filter: url(#distort); */
         margin: 0 0 0 0;
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         font-family: 'Hedvig Letters Sans', sans-serif;
         /* font-family: 'Helvetica Neue', sans-serif; */
         color:rgb(0, 0, 0);
@@ -45,51 +45,49 @@ svg {
         position:fixed;
         filter: url(#distort);
         border: 2px solid #000000;
-        left: 21%;
+        left: 20%;
         height : 100%;
       }
 
 
     .all{
+        width:100%;
         display: grid;
-        grid-template-columns: 1fr  3.7fr;
+        grid-template-columns: 1fr  4fr;
         overflow-x: hidden;
     }
 
     .left {
         overflow-y: auto;
-        max-height: 100vh;
+        height: 100vh;
         flex: 0 0 50%; /* Adjust the percentage as needed */
     }
 
-    .project{
-        z-index: 3;
+    .project a{
         margin-left:3%;
+        z-index: 1; /* Ensure proper stacking order */
+        position: relative; /* Adjust positioning if needed */
+        pointer-events: auto; /* Enable pointer events */
     }
     
         
     .category10{
- /* Change from absolute to sticky */
     margin-left:3%;
     font-weight: bold;
-    flex: 0 0 50%; /* Adjust the distance from the right as needed */
+
 
     }
 
     .right {
         overflow-y: auto;
-        max-height: 100%;
-        flex: 0 0 50%; /* Adjust the percentage as needed */
+        height: 100vh;
+   
     }
 
     
 
-
-
-  
-
     ::-webkit-scrollbar {
-    display: none;
+         display: none;
     }
 
     a:link, a:visited {
@@ -101,9 +99,9 @@ svg {
 
     a:hover{
        
-
-        filter: url(#distort);
-        color:rgb(0, 0, 0);
+        
+        /* filter: url(#distort); */
+        color:rgb(3, 24, 255);
         /* -webkit-transition: 0.5s;
         transition: 0.5s; */
     }
@@ -121,11 +119,11 @@ svg {
         overflow: hidden;
         white-space: nowrap;
 
-        z-index:2;
+       
         margin-top:0%;
         padding-top:0%;
         position: fixed;
-        margin-left:0.5%;
+      
         
         font-size: 1.7vw;
         
@@ -141,7 +139,7 @@ svg {
 
 
     
-        display: inline-block;
+
         animation: marquee 120s linear infinite;
         
     }
