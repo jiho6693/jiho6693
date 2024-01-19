@@ -13,8 +13,8 @@
 
 <div class="name">
     <div class="grid-item1">
-        <a href="../index.html">HOME</a> // <a href="./cv.html">CV</a> // <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a> // <a href="./contact.html">CONTACT</a> //
-        <div class="marquee">JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD // Artist</div>
+        <a href="../index.html">HOME</a> //  <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a><a href="./cv.html"> // <a href="mailto:jiho6693@gmail.com">CONTACT</a>  //<a href="cv.pdf">CV</a>
+        <br><div class="marquee">JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD // Artist</div>
     </div>
 </div>
 
