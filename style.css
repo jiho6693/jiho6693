@@ -72,6 +72,7 @@ svg {
     
         
     .category10{
+        font-weight: bold;
     margin-left:3%;
     font-weight: bold;
 
@@ -98,12 +99,13 @@ svg {
     }
 
     a:hover{
-       
-        
+     
+        text-decoration: line-through;
+     
         /* filter: url(#distort); */
-        color:rgb(3, 24, 255);
-        /* -webkit-transition: 0.5s;
-        transition: 0.5s; */
+  
+         
+       
     }
 
    
