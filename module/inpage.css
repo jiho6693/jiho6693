@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:wght@500&display=swap');
 svg {
     position: absolute;
 } 
@@ -19,7 +20,7 @@ svg {
     body{
        
         font-size: 1.5vw;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         -ms-overflow-style: none;
         overscroll-behavior: none;
     }
