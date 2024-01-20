@@ -286,8 +286,9 @@ svg {
                        
         
         .name{
-        position:fixed; 
         filter: url(#distort);
+        /* position:fixed;  */
+      
         overflow: hidden;
         white-space: nowrap;
         z-index:1;
