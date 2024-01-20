@@ -296,7 +296,7 @@ svg {
         margin-bottom:0%;
         padding-top:0%;
         
-        font-size: 4.9vw;
+        font-size: 5.3vw;
         
                         
                         
@@ -311,7 +311,7 @@ svg {
         
         
                         display: inline-block;
-                        animation: marquee 15s linear infinite;
+                        animation: marquee 20s linear infinite;
                         
                         }
         
