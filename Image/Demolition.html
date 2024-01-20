@@ -8,19 +8,7 @@
     <script src="../module/inpage.js"></script>
     <style>
   
-        .main_image{
-        text-align: center;   
-    }
-    
-    
-
-    .title{
-        margin: 3% 8% 0 8%;
-    }
-   
-    .description{
-        margin: 0 8% 0 8%;
-    }
+     
    
     </style>
 </head>
@@ -28,25 +16,24 @@
 <body>
     <div id="header"></div>
    
-    <div class="main_image">
+    <div class="main">
        <img src="./Demolition/d-0.jpg">
     </div>
 
-    <div class="info">
-        <div class="title"> Demolition, Photography, 2019, MMCA</div>
-        <div class="credit">
-            
-            <br>
-            </div>
-        <div class="description">
-           This is a photograph taken at the National Museum of Modern and Contemporary Art showing the space being dismantled after the exhibition.
-        </div>
-     </div>
-
-     <div class="main_image">
+    
+     
+     <div class="main">
         <div id="imageContainer"></div>
     </div>
 
+    <div class="info"><br>
+        <div class="title"> Demolition, Photography, 2019, MMCA
+        <br><br>
+            
+  
+           This is a photograph taken at the National Museum of Modern and Contemporary Art showing the space being dismantled after the exhibition.
+        </div><br>
+     </div>
    
 
  
@@ -66,19 +53,27 @@
                 document.getElementById('header').innerHTML = data;
             });
  
-        const startImageNumber = 1;
-        const endImageNumber = 4;
-        const imageContainer = document.getElementById('imageContainer');
+            const startImageNumber = 1;
+const endImageNumber = 4;
+const imageContainer = document.getElementById('imageContainer');
 
-        // 이미지를 동적으로 생성하여 페이지에 추가
-        for (let i = startImageNumber; i <= endImageNumber; i++) {
-            const img = document.createElement('img');
-            img.src = './Demolition/d-' + i +'.jpg'; 
-            img.alt = '이미지 d-' + i;
+// 이미지를 동적으로 생성하여 페이지에 추가
+for (let i = startImageNumber; i <= endImageNumber; i++) {
+    const img = document.createElement('img');
+    img.src = './Demolition/d-' + i + '.jpg';
+    img.alt = '이미지 d-' + i;
 
-            // 이미지를 이미지 컨테이너에 추가
-            imageContainer.appendChild(img);
-        }
+    // 이미지를 이미지 컨테이너에 추가
+    imageContainer.appendChild(img);
+
+    // <br> 태그 추가 (두 번)
+    if (i !== endImageNumber) {
+        const lineBreak1 = document.createElement('br');
+       
+        imageContainer.appendChild(lineBreak1);
+     
+    }
+}
 
 
 //         const images = [];
