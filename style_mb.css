@@ -17,7 +17,7 @@
     
 
     hr{
-        border: 0.15vh solid #000000;
+        border: 0.1 vh solid #000000;
     
 
   
@@ -51,19 +51,6 @@
       }
    
 
-     /* .back {
-        overflow:hidden;
-        filter: blur(10px);
-        font-size: 100vw;
-        color:rgb(251, 0, 0);
-        font-family: 'Linefont ttf';
-        font-weight: 100;
-        
-    } */
-     
-    /* ::-webkit-scrollbar {
-      display: none;
-    } */
     
     a:link, a:visited {
     
@@ -71,45 +58,7 @@
         text-decoration: none;
     
       }
-    
-    /* a:hover{
-        filter: blur(20px);
-        color: rgb(0, 0, 0);
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-    }
-     */
-    /* #rain {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        background: transparent;
-      }
-      
-      .raindrop {
-        position: absolute;
-        width: 0.3vw;
-        height: 8vh;
-        background: rgb(93, 93, 93);
-        opacity: 0.2;
-        animation: fall 0.8s linear infinite;
-      } */
-    
-      
-/*       
-      @keyframes fall {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(100vh);
-        }
-    }
-     */
-
+ 
     
     .name{
         filter: url(#distort);
@@ -178,20 +127,6 @@
          
        
     }
-    
-  
-    
-   
-    
-    
-    
-    
-    
-    /* .mainimage2 img{
-        margin: 0 0 0 0;
-        width:100%;
-    
-    } */
     
     
     
