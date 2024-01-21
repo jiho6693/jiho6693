@@ -25,7 +25,7 @@
 
     body {
       
-        font-size: 4.9vw;
+        font-size: 4.8 vw;
         margin: 0 0 0 0;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
@@ -61,7 +61,7 @@
  
     
     .name{
-        font-size: 5.4vw;
+        font-size: 5vw;
         filter: url(#distort);
        
         overflow: hidden;
@@ -155,7 +155,7 @@
 
     .infomobile
     {
-        text-decoration: line-through;
+     
         position: absolute;
         right:3%;
     }
