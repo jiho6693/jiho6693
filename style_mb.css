@@ -23,9 +23,7 @@
   
     }
 
-    html {
-        background-color: #7178ff;
-    }
+   
 
     body {
       
@@ -42,6 +40,9 @@
         
      }
 
+    .content{
+        background-color: #ffffff; 
+    }
         
     .category1 {
         
