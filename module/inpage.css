@@ -50,6 +50,28 @@ svg {
         overscroll-behavior: none;
     }
 
+    .leftbtn {
+    
+        position:absolute;
+        width:2.5vw;
+        top: 45%;
+        left: 2%;
+        opacity: 0.7;
+        outline-style: none;
+    }
+    .rightbtn {
+        display:block;
+        position: absolute;
+        width: 2.5vw;
+        right: 2%;
+        opacity: 0.7;
+     
+        top: 45%;
+     
+        outline-style: none;
+    }
+    
+
    
 
     .home{
@@ -237,6 +259,28 @@ svg {
                 
                 text-align: center;   
             }
+
+            .leftbtn {
+    
+                position:absolute;
+                width:2.5vw;
+                top: 45%;
+                left: 2%;
+                opacity: 0.7;
+                outline-style: none;
+            }
+            .rightbtn {
+                display:block;
+                position: absolute;
+                width: 2.5vw;
+                right: 2%;
+                opacity: 0.7;
+             
+                top: 45%;
+             
+                outline-style: none;
+            }
+            
             
             hr{
                     z-index: 0;
