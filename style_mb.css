@@ -34,7 +34,7 @@
         /* font-weight:700; */
        
         color:rgb(0, 0, 0);
-        background: linear-gradient(360deg, #7178ff 0.1%, #bcbfff 30%, #ffffff);
+        background: linear-gradient(360deg, #7178ff 40%, #ffffff);
         overscroll-behavior: none;
         
         
