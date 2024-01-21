@@ -9,6 +9,9 @@
     <style>
    
 
+   .main{
+    position: relative;
+   }
    
     </style>
 </head>
@@ -17,7 +20,11 @@
     <div id="header"></div>
    
     <div class="main">
+        <input type="image" class="leftbtn" src="../module/left.png" onclick="previousImage()">
+        <input type="image" class="rightbtn" src="../module/right.png" onclick="nextImage()">
         <img src="./sword/s-1.jpg">
+    </div>
+     
     </div>
     <br>
     <div class="info">
@@ -48,6 +55,7 @@
         © JI-HO PARK
     </div>
     
+
     
     <script>
 
@@ -86,7 +94,10 @@
         }
         
         // Automatically slide to the next image every 5 seconds
-        setInterval(nextImage, 1000);
+        setInterval(nextImage, 1900);
+
+
+
       </script>
 
 </body>

@@ -15,6 +15,29 @@ svg {
     width:70%;
 }
 
+.leftbtn {
+    
+    position:absolute;
+    width:2.5vw;
+    top: 45%;
+    left: 2%;
+    opacity: 0.7;
+    outline-style: none;
+}
+.rightbtn {
+    display:block;
+    position: absolute;
+    width: 2.5vw;
+    right: 2%;
+    opacity: 0.7;
+ 
+    top: 45%;
+ 
+    outline-style: none;
+}
+
+
+
 
     
 @media all and (min-width:768px){ 
@@ -60,7 +83,7 @@ svg {
 
  
     .main {
-        
+        position: relative;
         text-align: center;  
     }
     
@@ -218,7 +241,7 @@ svg {
             hr{
                     z-index: 0;
                     border: 0.18vh solid #000000;
-                    margin: 0.5vh 0 0.2vh 0;
+                    margin: 0.6vh 0 0.2vh 0;
             
               
                 }
