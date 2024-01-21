@@ -34,7 +34,7 @@
         /* font-weight:700; */
        
         color:rgb(0, 0, 0);
-        background: linear-gradient(360deg, #7178ff 40%, #ffffff);
+        /* background: linear-gradient(360deg, #7178ff 40%, #ffffff); */
         overscroll-behavior: none;
         
         
@@ -58,7 +58,7 @@
     .box{
         height:100%;
         width:100%;
-        background: linear-gradient(360deg, #7178ff 0.1%, #bcbfff 30%, #ffffff);
+        background: linear-gradient(360deg,  #ffffff, #bcbfff 40%, #7178ff 1%, #bcbfff 30%, #ffffff);
         opacity: 1;
     }
 
