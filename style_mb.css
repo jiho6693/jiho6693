@@ -23,6 +23,10 @@
   
     }
 
+    html {
+        background-color: #7178ff;
+    }
+
     body {
       
         font-size: 4.85vw;
@@ -32,7 +36,7 @@
         /* font-weight:700; */
        
         color:rgb(0, 0, 0);
-     
+        background-color: white;
         overscroll-behavior: none;
         
         
@@ -53,7 +57,7 @@
     .box{
         height:100%;
         width:100%;
-        background: linear-gradient(360deg, #737aff 0.1%, #d8d8d8 80%, #ffffff);
+        background: linear-gradient(360deg, #7178ff 0.1%, #bcbfff 30%, #ffffff);
         opacity: 1;
     }
 
