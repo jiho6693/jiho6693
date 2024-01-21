@@ -265,7 +265,7 @@ svg {
                 border: 10px dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
                 background-color: rgba(255, 0, 0, 0); 
                 position:absolute;
-                
+                height:4.5vh;
                 width:3vw;
                 top: 43%;
                 left: 0.5%;
@@ -276,6 +276,7 @@ svg {
                 border: 10px dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
                 background-color: rgba(255, 0, 0, 0); 
                 position: absolute;
+                height:4.5vh;
                 width:3vw;
                 top: 43%;
                 right: 0.5%;
