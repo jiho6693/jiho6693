@@ -104,7 +104,7 @@
      
         display: inline-block;
         animation: marquee 20s linear infinite;
-        padding-bottom:2%;
+        padding-bottom:4%;
         
     }
     
@@ -157,7 +157,7 @@
     }
     
     .web{
-        padding-top:2%;
+        padding-top:0%;
         
     
     
