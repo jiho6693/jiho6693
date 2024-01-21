@@ -23,6 +23,19 @@ svg {
         
     }
 
+    .poster{
+        
+        margin: 0 0 0 0;
+        position:absolute;
+        transform: translate(-50%, -50%);
+        top:48%;
+        left:50%;
+    }
+
+    .poster video{
+        width:100vh;
+    }
+
 
     iframe{
         border: 0;
@@ -86,6 +99,7 @@ svg {
     }
 
     .right {
+        position: relative;
         overflow-y: auto;
         height: 100vh;
    
