@@ -32,7 +32,7 @@ svg {
     }
 
     .leftbtn {
-        border: 20px dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
+        border:3vh dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
         background-color: rgba(255, 0, 0, 0); 
         height:6vh;
         position:absolute;
@@ -43,7 +43,7 @@ svg {
         outline-style: none;
     }
     .rightbtn {
-        border: 20px dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
+        border: 3vh dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
                 background-color: rgba(255, 0, 0, 0); 
                 height:6vh;
         display:block;
