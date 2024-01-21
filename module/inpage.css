@@ -144,6 +144,7 @@ svg {
                     
                 margin-top:0%;
                 padding-top:0%;
+                
                 position: fixed;
                 margin-left:0.5%;
              
@@ -215,7 +216,7 @@ svg {
             }
             
             hr{
-                    z-index: 1;
+                    z-index: 0;
                     border: 0.2vh solid #000000;
                     margin: 0.5vh 0 0vh 0;
             
