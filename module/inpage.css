@@ -212,8 +212,16 @@ svg {
             .main {
                 
                 text-align: center;   
-                
             }
+            
+            hr{
+                    border: 0.16vh solid #000000;
+                
+            
+              
+                }
+
+            
 
             .info{
                 position: relative;
