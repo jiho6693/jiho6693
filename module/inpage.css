@@ -216,7 +216,7 @@ svg {
             
             hr{
                     border: 0.16vh solid #000000;
-                
+                    margin: 1vh 0 0.2vh 0;
             
               
                 }
@@ -317,18 +317,19 @@ svg {
             margin-left:0.5vw;
             }
         
-                       
+       
         
         .name{
         filter: url(#distort);
         /* position:fixed;  */
-      
+        
         overflow: hidden;
         white-space: nowrap;
         z-index:1;
         margin-top:0%;
-        margin-bottom:0%;
+       
         padding-top:0%;
+
         
         font-size: 4.85vw;
         

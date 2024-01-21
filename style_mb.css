@@ -23,6 +23,10 @@
   
     }
 
+    .line{
+        border: 0px;
+    }
+
    
 
     body {
@@ -100,6 +104,7 @@
      
         display: inline-block;
         animation: marquee 20s linear infinite;
+        padding-bottom:2%;
         
     }
     
@@ -152,7 +157,7 @@
     }
     
     .web{
-        padding-top:5%;
+        padding-top:2%;
         
     
     
@@ -160,6 +165,7 @@
        }
 
     .project{
+        margin-bottom:0%;
         margin-left: 2%;
         margin-right: 2%;
     }
