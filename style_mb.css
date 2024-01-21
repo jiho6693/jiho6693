@@ -45,11 +45,17 @@
         height: 100vh;
         width: 100%;
         position: fixed;
-        /* background: linear-gradient(360deg, #000dff 0.5%, #d8d8d8 50%, #ffffff);
-        opacity: 0;
-        transition: opacity 0.5s ease-out; */
+        
+        /* transition: opacity 0.5s ease-out;  */
       }
    
+
+    .box{
+        height:100%;
+        width:100%;
+        background: linear-gradient(360deg, #737aff 0.1%, #d8d8d8 80%, #ffffff);
+        opacity: 1;
+    }
 
     
     a:link, a:visited {
@@ -61,7 +67,7 @@
  
     
     .name{
-        font-size: 5vw;
+        font-size: 4.85vw;
         filter: url(#distort);
        
         overflow: hidden;
