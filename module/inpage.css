@@ -24,7 +24,7 @@ svg {
 @media all and (min-width:768px){ 
     body{
      
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
         -ms-overflow-style: none;
@@ -34,25 +34,25 @@ svg {
     .leftbtn {
         border:3vh dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
         background-color: rgba(255, 0, 0, 0); 
-        height:6vh;
+        height:5vh;
         position:absolute;
-        width:2vw;
-        top: 40%;
+        width:1.5vw;
+        top: 45%;
         left: 0.5%;
-        opacity: 0.6;
+        opacity: 0.4;
         outline-style: none;
     }
     .rightbtn {
         border: 3vh dashed rgba(204, 204, 204, 0); /* Set alpha channel to 0 for transparency */
                 background-color: rgba(255, 0, 0, 0); 
-                height:6vh;
+                height:5vh;
         display:block;
         position: absolute;
-        width: 2vw;
+        width: 1.5vw;
         right: 0.5%;
-        opacity: 0.6;
+        opacity: 0.4;
      
-        top: 40%;
+        top: 45%;
      
         outline-style: none;
     }
@@ -155,9 +155,7 @@ svg {
     }
 
 
-    ::-webkit-scrollbar {
-  display: none;
-}
+  
 
 .drawing{
     font-size:2vw;

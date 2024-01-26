@@ -11,7 +11,7 @@ svg {
         color:rgb(0, 0, 0);
         /* filter: url(#distort); */
         margin: 0 0 0 0;
-        font-size: 1.22vw;
+        font-size: 1.20vw;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
         /* font-family: 'Helvetica Neue', sans-serif; */
@@ -97,6 +97,7 @@ svg {
     }
 
     .web a{
+       
         margin-left:0%;
         z-index: 1; /* Ensure proper stacking order */
         position: relative; /* Adjust positioning if needed */
@@ -223,8 +224,8 @@ svg {
             white-space: nowrap;
             /* font-family: 'Helvetica Neue', sans-serif; */
             color:rgb(0, 0, 0);
-            overflow: hidden;
-            -ms-overflow-style: none;
+             overflow: hidden; 
+             -ms-overflow-style: none; 
             overscroll-behavior: none;
             
         
