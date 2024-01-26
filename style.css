@@ -7,13 +7,15 @@ svg {
 
 
     body {
+        
+        color:rgb(0, 0, 0);
         /* filter: url(#distort); */
         margin: 0 0 0 0;
         font-size: 1.22vw;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
         /* font-family: 'Helvetica Neue', sans-serif; */
-        color:rgb(0, 0, 0);
+        /* color:rgb(0, 0, 0); */
         overflow: hidden;
         -ms-overflow-style: none;
         overscroll-behavior: none;
@@ -42,7 +44,7 @@ svg {
     }
 
     hr{
-        border: 0.28vh solid #000000;
+        border: 2px solid #000000;
     
 
   
@@ -59,7 +61,7 @@ svg {
    
         position:fixed;
         filter: url(#distort);
-        border: 0.26vh solid #000000;
+        border: 2px solid #000000;
         left: 19.7%;
         height : 100%;
       }
@@ -87,7 +89,7 @@ svg {
     
         
     .category10{
-        text-decoration:  line-through;
+        /* text-decoration:  line-through; */
     
         /* font-weight: bold; */
     margin-left:3%;
@@ -113,7 +115,7 @@ svg {
 
     a:link, a:visited {
 
-        color:rgb(0, 0, 0);
+        color:inherit;
         text-decoration: none;
 
     }
