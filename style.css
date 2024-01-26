@@ -141,10 +141,10 @@ svg {
     }
 
     a:hover{
-        background-color: rgb(73, 57, 255);
+        background-color: rgb(21, 0, 255, 0.5);
         /* text-decoration: line-through; */
      
-        /* filter: url(#distort); */
+        filter: url(#distort);
   
          
        
