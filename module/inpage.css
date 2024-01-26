@@ -24,9 +24,9 @@ svg {
 @media all and (min-width:768px){ 
     body{
      
-        font-size: 1.1vw;
+        font-size: 1vw;
         font-family: 'Montserrat', sans-serif;
-        font-weight:600;
+        font-weight:500;
         -ms-overflow-style: none;
         overscroll-behavior: none;
     }
@@ -70,10 +70,10 @@ svg {
     }
 
     .title_labor{
-        padding-top:3.5%;
+        padding-top:9.5%;
         margin-bottom:2%;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.5vw;
       
     
         }

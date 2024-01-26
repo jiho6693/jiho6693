@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 svg {
     position: absolute;
 } 
@@ -13,7 +14,7 @@ svg {
         margin: 0 0 0 0;
         font-size: 1.20vw;
         font-family: 'Montserrat', sans-serif;
-        font-weight:600;
+        font-weight:500;
         /* font-family: 'Helvetica Neue', sans-serif; */
         /* color:rgb(0, 0, 0); */
         overflow: hidden;
@@ -46,7 +47,7 @@ svg {
     }
 
     hr{
-        border: 2px solid #000000;
+        border: 2vh solid #000000;
     
 
   
@@ -59,7 +60,7 @@ svg {
         position: fixed;
         top:3%;
         width : 100%;
-        border: 2px solid #000000;
+        border: 0.25vh solid #000000;
     
         filter: url(#distort);
     }
@@ -68,7 +69,7 @@ svg {
    
         position:fixed;
         filter: url(#distort);
-        border: 2px solid #000000;
+        border: 0.25vh solid #000000;
         top:15%;
         
         width : 100%;
@@ -189,7 +190,7 @@ svg {
 
     
 
-        animation: marquee 120s linear infinite;
+        animation: marquee 200s linear infinite;
         
     }
 
