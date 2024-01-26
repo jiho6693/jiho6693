@@ -111,9 +111,9 @@ svg {
 
 
     .main_image img{
-        
+      
         margin-top:2.5%;
-       width:95%;
+       width:100%;
     }
     
     .main img{
@@ -158,8 +158,8 @@ svg {
   
 
 .drawing{
-    font-size:2vw;
-    margin-left:0.5vw;
+
+    margin-left:2vw;
     }
 
                

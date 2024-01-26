@@ -86,11 +86,11 @@ svg {
 
     .left {
     
-        margin-top:1%;
-        background-color: rgb(253, 253, 253, 0.1);
+      padding-top:2.5%;
+        background-color: rgb(253, 253, 253, 1);
         position:fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 0;
         overflow-y: auto;
         height: 11vh;
        
@@ -157,9 +157,10 @@ svg {
 
 
     .name{
-        padding-bottom:1%;
+        z-index:1;
+      
         position:fixed;
-        background-color: rgb(255, 255, 255, 0.1) ;
+        background-color: rgb(255, 255, 255, 1) ;
 
         filter: url(#distort);
     
@@ -168,7 +169,7 @@ svg {
 
        z-index:1;
         margin-top:0%;
-        padding-top:0%;
+     
       
       
         
@@ -215,14 +216,14 @@ svg {
 
     @media all and (max-width:960px){
 
-        body {
-            /* filter: url(#distort); */
+        /* body {
+  
             margin: 0 0 0 0;
             font-size: 3vw;
             font-family: 'Montserrat', sans-serif;
             font-weight:600;
             white-space: nowrap;
-            /* font-family: 'Helvetica Neue', sans-serif; */
+
             color:rgb(0, 0, 0);
              overflow: hidden; 
              -ms-overflow-style: none; 
@@ -236,7 +237,7 @@ svg {
         .name{
 
             filter: url(#distort);
-        
+           
             overflow: hidden;
             white-space: nowrap;
     
@@ -250,7 +251,7 @@ svg {
             
         
         
-        }
+        } */
     }
     
   
