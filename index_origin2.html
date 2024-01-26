@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>HOME</title>
+    <svg>
+        <defs>
+            <filter id="distort">
+                <feTurbulence baseFrequency="0.01 0.01" numOctaves="1" result="noise"  />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="R">
+            </filter>
+            
+        </defs>
+    </svg>
+    <link rel="stylesheet" href="style_origin2.css">
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var UserAgent = navigator.userAgent;
+        if (UserAgent.match(/iPhone|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "index_mb.html"; /* 모바일 홈페이지 경로 */ }
+    </script>
+
+</head>
+<body>
+  
+    <div class="name">
+        <div class="grid-item1">
+        <div class="marquee">
+            <a href="../index.html">HOME</a> // <a href="cv.pdf">CV</a> // <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a> // <a href="mailto:jiho6693@gmail.com">CONTACT</a> //JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD //<a href="../index.html">HOME</a> // <a href="cv.pdf">CV</a> // <a href="https://www.instagram.com/ziromons/">INSTAGRAM</a> // <a href="mailto:jiho6693@gmail.com">CONTACT</a> //JI-HO PARK // PROVIDENCE // SEOUL // WEATHER:CLOUD //JI-HO PARK</div>
+        </div>
+    </div>
+  
+<br> 
+<div class="line"><hr/></div>
+<div class="all">
+    <div class="left">
+        <div class="index">
+            <div class="web">
+              
+                <div class="category10">IMAGE /      </div><br>
+           
+
+                
+                <div class="project">    
+                    <a href="#" onclick="showContent('./Image/Landscape.html')">Landscape 212th<br></a>
+                    <a href="#" onclick="showContent('./Image/Drawingmachine.html')">Drawing to Drawing<br></a>
+                    <a href="#" onclick="showContent('./Image/DrawingSeries.html')">Digital drawing<br></a>
+                    <a href="#" onclick="showContent('./Image/Demolition.html')">Demolition<br></a>
+                  <!-- <a href="#" onclick="showContent('./Image/Compression.html')">Compression<br></a> -->
+                </div>  
+
+                <div class="line"><hr/></div>
+                <div class="category10"> INSTALLATION /  </div><br>
+                    
+
+                <div class="project">    
+
+                    <a href="#" onclick="showContent('./Installation/Goodbyeservice.html')">Goodbye Service<br></a>
+                    <a href="#" onclick="showContent('./Installation/Wall.html')">Making a wall and throwing-<br></a>
+                    <a href="#" onclick="showContent('./Installation/Cyanotype.html')"> Cyan No-type<br></a>
+                    <a href="#" onclick="showContent('./Installation/Wealldance.html')"> We All Dance, Extended<br></a>
+                    <!-- <a href="#" onclick="showContent('./Installation/Goodbyeservice.html')"> Overnight Delivery<br></a> -->
+                    <a href="#" onclick="showContent('./Installation/Barteringtruck.html')"> Bartering Truck<br></a>
+                    <a href="#" onclick="showContent('./Installation/Jacob.html')"> Jacob's Ladder<br></a>
+                    </div>
+            
+        
+
+                <div class="line"><hr/></div>
+                <div class="category10"> WEB /
+                </div> <br>
+
+                <div class="project">
+                    <a href="#" onclick="showContent('./web/pixel.html')">A Pixel is not a sq-<br></a>
+                    <a href="#" onclick="showContent('./web/Air.html')">Aerial Perspective<br></a>
+                    <a href="#" onclick="showContent('./web/Stonezine.html')">Stone Zine<br></a>
+                    <!-- <a href="#" onclick="showContent('https://jiho6693.github.io/stonetostone/')">Stone to Stone<br></a> -->
+                    <a href="#" onclick="showContent('./web/Goingforward.html')">Goingforward<br></a>
+             
+
+                    <!-- <a href="#" onclick="showContent('./web/Sketch.html')">Web Sketch<br></a> -->
+                    <a href="#" onclick="showContent('./web/Weather.html')">Weather books<br></a>
+                    <a href="#" onclick="showContent('https://jiho6693.github.io/archive/')">RISD Archive<br></a>
+                    <a href="#" onclick="showContent('./web/gpt.html')">Gpt competition<br></a>  
+                    <!-- <a href="#" onclick="showContent('./web/pixel.html')">Weight Shift<br></a> -->
+                    <a href="#" onclick="showContent('./web/Sword.html')">Sword, Stone an-<br></a>
+                    <a href="#" onclick="showContent('./web/Lud_gangnam.html')">LUD_Gangnam-<br></a>
+                </div>  
+            
+       
+
+                <div class="line"><hr/></div>
+                <div class="category10">LABOR /</div>  <br>
+             
+                <div class="project">   
+                <a href="#" onclick="showContent('./labor/Gangnam.html')"> LUD_Gangnam<br></a>
+                <a href="#" onclick="showContent('./labor/Locus.html')">  LUD_LocusX<br></a>
+                <a href="#" onclick="showContent('./labor/London.html')"> LUD_London<br></a>
+                <a href="#" onclick="showContent('./labor/Videoproduction.html')"> Video Production<br></a>
+                <a href="#" onclick="showContent('./labor/Mmca.html')"> LUD_MMCA<br></a>
+                </div>              
+                 <br>
+                <br><br><br><br><br><br>
+            </div>
+        </div>
+        
+
+    
+       
+    </div>
+
+   
+    <div class='v-line'></div>
+    <div class="right">
+        <div class="poster">
+            <video src="./poster/2.MOV" autoplay muted loop></video>
+        </div>
+        
+    </div>
+</div>   
+
+<script>
+    function showContent(link) {
+        // Get the right side element
+        var rightSide = document.querySelector('.right');
+
+        // Clear previous content
+        rightSide.innerHTML = '';
+
+        // Create an iframe to display the webpage
+        var iframe = document.createElement('iframe');
+        iframe.src = link;
+        iframe.width = '100%';
+        iframe.height = '100%';
+
+        // Append the iframe to the right side
+        rightSide.appendChild(iframe);
+    }
+
+    // window.addEventListener('load', function () {
+    //     showContent('https://jiho6693.github.io/rainyday/'); // Replace this with the default link you want to show
+    // });
+</script>
+
+</body>
+
+</html>

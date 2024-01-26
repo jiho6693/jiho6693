@@ -25,7 +25,7 @@ svg {
         
     }
 
-    /* .poster{
+    .poster{
         
         margin: 0 0 0 0;
         position:absolute;
@@ -36,12 +36,10 @@ svg {
 
     .poster video{
         width:100vh;
-    } */
+    }
 
 
     iframe{
-       
-        text-align: center;
         border: 0;
     }
 
@@ -53,13 +51,8 @@ svg {
     }
 
     .line{
-        z-index: 1;
-       
-        margin-top:0.3%;
-        position: fixed;
-        top:3%;
-        width : 100%;
-        border: 2px solid #000000;
+        
+        border: 0px;
     
         filter: url(#distort);
     }
@@ -69,46 +62,37 @@ svg {
         position:fixed;
         filter: url(#distort);
         border: 2px solid #000000;
-        top:15%;
-        
-        width : 100%;
-        z-index:1;
+        left: 19.7%;
+        height : 100%;
       }
 
 
     .all{
-         
         width:100%;
-     
-      
+        display: grid;
+        grid-template-columns: 1fr  4fr;
         overflow-x: hidden;
     }
 
     .left {
-    
-        margin-top:1%;
-        background-color: rgb(253, 253, 253, 1);
-        position:fixed;
-        width: 100%;
-        z-index: 1;
         overflow-y: auto;
-        height: 11vh;
+        height: 100vh;
         flex: 0 0 50%; /* Adjust the percentage as needed */
     }
 
-    .web a{
-        margin-left:0%;
+    .project a{
+        /* margin-left:3%; */
         z-index: 1; /* Ensure proper stacking order */
         position: relative; /* Adjust positioning if needed */
         pointer-events: auto; /* Enable pointer events */
     }
     
         
-    .web{
+    .category10{
         /* text-decoration:  line-through; */
     
         /* font-weight: bold; */
-    margin-left:1%;
+    margin-left:3%;
     /* font-weight: bold; */
 
    
@@ -117,12 +101,9 @@ svg {
     }
 
     .right {
-        left:0%;
-        
-        /* position: relative; */
+        position: relative;
         overflow-y: auto;
         height: 100vh;
-        width: 100vw;
    
     }
 
@@ -140,8 +121,8 @@ svg {
     }
 
     a:hover{
-        background-color: rgb(73, 57, 255);
-        /* text-decoration: line-through; */
+     
+        text-decoration: line-through;
      
         /* filter: url(#distort); */
   
@@ -156,19 +137,16 @@ svg {
 
 
     .name{
-        padding-bottom:1%;
-        position:fixed;
-        background-color: rgb(255, 255, 255, 1) ;
 
         filter: url(#distort);
     
         overflow: hidden;
         white-space: nowrap;
 
-       z-index:1;
+       
         margin-top:0%;
         padding-top:0%;
-      
+        position: fixed;
       
         
         font-size: 1.7vw;
@@ -178,7 +156,6 @@ svg {
     }
 
     .marquee {
-        
         
         width:100%;
     
