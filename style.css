@@ -131,14 +131,10 @@ svg {
 
     }
 
-    a:hover{
-        background-color: rgb(21, 0, 255, 0.9);
-        /* text-decoration: line-through; */
-     
-        filter: url(#distort);
-  
-         
-       
+    a:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        border-radius: 1vh;
+        
     }
 
    

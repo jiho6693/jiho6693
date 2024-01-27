@@ -73,10 +73,19 @@ svg {
         padding-top:9.5%;
         margin-bottom:2%;
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 1.4vw;
       
     
         }
+
+    .title_role{
+            padding-top:5%;
+            margin-bottom:2%;
+            text-align: center;
+            font-size: 1.4vw;
+          
+        
+            }
 
     .labor_video{
         margin: 0 1% 0 1%;
@@ -295,6 +304,14 @@ svg {
                 font-size: 4vw
             
                 }
+
+                .title_role{
+                    padding-top:8%;
+                    margin-bottom:3%;
+                    text-align: center;
+                    font-size: 4vw
+                
+                    }
 
             .title_labor_video{
                     text-align: center;
