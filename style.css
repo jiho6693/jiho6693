@@ -12,7 +12,7 @@ svg {
         color:rgb(0, 0, 0);
         /* filter: url(#distort); */
         margin: 0 0 0 0;
-        font-size: 1.20vw;
+        font-size: 1.1vw;
         font-family: 'Montserrat', sans-serif;
         font-weight:500;
         /* font-family: 'Helvetica Neue', sans-serif; */
@@ -26,82 +26,64 @@ svg {
         
     }
 
-    /* .poster{
-        
-        margin: 0 0 0 0;
-        position:absolute;
-        transform: translate(-50%, -50%);
-        top:48%;
-        left:50%;
-    }
-
-    .poster video{
-        width:100vh;
-    } */
-
-
-    iframe{
-       
-        text-align: center;
-        border: 0;
-    }
-
-    hr{
-        border: 2vh solid #000000;
-    
-
-  
-    }
-
-    .line{
-        z-index: 1;
-       
-        margin-top:0.3%;
-        position: fixed;
-        top:3%;
-        width : 100%;
-        border: 0.25vh solid #000000;
-    
-        filter: url(#distort);
-    }
-
-    .v-line {
    
-        position:fixed;
-        filter: url(#distort);
-        border: 0.25vh solid #000000;
-        top:15%;
-        
-        width : 100%;
-        z-index:1;
-      }
 
-
-    .all{
-         
-        width:100%;
-     
-      
-        overflow-x: hidden;
-    }
-
-    .left {
+    .top {
     
-      padding-top:2.5%;
-        background-color: rgb(253, 253, 253, 1);
         position:fixed;
+      
+        background-color: rgb(253, 253, 253, 1);
+   
         width: 100%;
         z-index: 0;
         overflow-y: auto;
-        height: 11vh;
+        /* height: 11vh; */
        
+    }
+
+    .name{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        filter: url(#distort);
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top:0%;
+        font-size: 1.4vw;
+
+    }
+
+    .marquee {     
+        width:100%;    
+        animation: marquee 200s linear infinite;
+        
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translate(0%, 0);
+        }
+        100% {
+            transform: translate(-100%,0 );
+        }
+    }
+ 
+
+    .line{
+        width : 100%;
+        border: 0.25vh solid #000000;
+        filter: url(#distort);
+    }
+
+  
+
+    .index{
+        margin-top:0.3%;
     }
 
     .web a{
        
-        margin-left:0%;
+        
         z-index: 1; /* Ensure proper stacking order */
-        position: relative; /* Adjust positioning if needed */
         pointer-events: auto; /* Enable pointer events */
     }
     
@@ -118,7 +100,8 @@ svg {
 
     }
 
-    .right {
+
+    .bottom {
         left:0%;
         
         /* position: relative; */
@@ -127,6 +110,13 @@ svg {
         width: 100vw;
    
     }
+
+    iframe{
+       
+        text-align: center;
+        border: 0;
+    }
+
 
     
 
@@ -152,58 +142,7 @@ svg {
     }
 
    
-
-    
- 
-
-
-    .name{
-        z-index:1;
-      
-        position:fixed;
-        background-color: rgb(255, 255, 255, 1) ;
-
-        filter: url(#distort);
-    
-        overflow: hidden;
-        white-space: nowrap;
-
-       z-index:1;
-        margin-top:0%;
-     
-      
-      
-        
-        font-size: 1.7vw;
-        
-    
-    
-    }
-
-    .marquee {
-        
-        
-        width:100%;
-    
-        white-space: nowrap;
-
-
-    
-
-        animation: marquee 200s linear infinite;
-        
-    }
-
-    @keyframes marquee {
-        0% {
-            transform: translate(0%, 0);
-        }
-        100% {
-            transform: translate(-100%,0 );
-        }
-    }
-
-    
+   
 
     .hidden {
         display: none;
@@ -217,7 +156,7 @@ svg {
 
     @media all and (max-width:960px){
 
-        /* body {
+         body {
   
             margin: 0 0 0 0;
             font-size: 3vw;
@@ -233,7 +172,7 @@ svg {
         
         
             
-        }
+        } 
         
         .name{
 
@@ -245,14 +184,14 @@ svg {
            
             margin-top:0%;
             padding-top:0%;
-            position: fixed;
+  
           
             
             font-size: 3.5vw;
             
         
         
-        } */
+        } 
     }
     
   
