@@ -7,11 +7,33 @@
     <link rel="stylesheet" href="../module/inpage.css">
     <script src="../module/inpage.js"></script>
     <style>
+
+  /* .main img{
+    
+      text-align: center;
+      top: 52.5%;
+      left: 50%;
+      margin-top:2.5%;
+      transform: translate(-50%, -50%);
+     width:45%;
+  } */
+
+  .main img{
+    width:80vh;
+    margin-top: 17.5vh;
+  }
   
-        .main_image{
-        text-align: center;   
-        
-    }
+  .des_image {
+   
+    text-align: center;
+  }
+
+  .des_image img{
+    width:18%;
+    text-align: center;
+  }
+
+
     
   
     
@@ -21,20 +43,64 @@
 
 <body>
     <div id="header"></div>
-   
-    <div class="main_image">
-        <img src="Compression/1.png"><br>
-        <img src="Compression/2.png"><br>
-        <!-- <div id="imageContainer"></div> -->
-    </div>
-
+  
+   <div class="main">
+    <input type="image" class="leftbtn" src="../module/left_b.png" onclick="previousImage()">
+    <input type="image" class="rightbtn" src="../module/right_b.png" onclick="nextImage()">
+      <img src="Compression/5.png"><br>
+      
+      <!-- <div id="imageContainer"></div> -->
+  </div>
     <div class="info">
-        <div class="title">  <br><br>Barteringtruck, Photography, 2018</div>
+        <div class="title">  <br><br>Compression, Digital Image, 2023 </div>
         <div class="credit">
             
-            <br>
+            <br><br>
             </div>
         <div class="description">
+            Digital Image - jpeg
+          <br><br>
+          Due to the high data volume of digital images, digital files are often compressed due to issues of transmission speed and cost. The compression methods
+          for images are typically categorized into two types: lossless and lossy. In lossless compression, as the name suggests, the original information is not lost.
+          Conversely, in lossy compression, data is sacrificed. Therefore, lossy compression is primarily used for images, music, and videos, where some loss of data
+          is acceptable. Believe it or not, our eyes and ears are quite forgiving, and we often don't notice missing details. One of the most notable formats for lossy
+          compression is JPEG (Joint Photographic Experts Group). JPEG was invented in 1986 and has become a widely adopted standard algorithm for digital
+          image compression and encoding. It allows for the storage of high-quality images in relatively small file sizes. 
+          
+          <br>
+          The JPEG compression process involves
+          several key techniques, including color transformation, sampling, quantization, discrete cosine transform (DCT), and Huffman encoding. In the DCT step,
+          the program divides the JPEG image into numerous 8x8 matrices (as shown in Figure 1) and transforms each image into the frequency domain. This DCT
+          transformation is used to compress and represent the image data. JPEG format is highly efficient for handling photographs and graphic images, making it
+          particularly useful for sharing and storing images on the web. Therefore, JPEG is a widely used format because it supports existing systems and is highly
+          compatible.
+            <br><br>
+
+            디지털 이미지의 높은 용량은 전송의 속도와 저장의 비용때문에 디지털파일은 특정한 포맷을 갖거나, 특정한 방식을 이용해 압축되어진다. 이미지를 압축하는 방식은 loseless방식과 lossy방식으로 나누어진다 , 믿거나 말거나, 우리의 눈과 귀는 꽤 형편없어서 보통 여기저기서 누락된 부분을 알아차리지 못하기 때문에 lossy 압축은 우리에게 그다지 중요하지 않은 정보를 제거하며 작동하는 방식이다. 이 압축방식은 효율적이기에 주로 쓰인다.
+            <br><br>
+            디지털화, 특히 이미지 처리 기술에서 사용되는 압축 기술은 이미지 데이터를 효율적으로 저장하거나 전송하는 방법을 의미한다. 그렇기에 이러한 전략은 이미지 데이터의 관리와 전달에 중요한 역할을 하며, 주로 데이터의 중복을 제거하거나 불필요한 정보를 줄여서 데이터의 크기를 최소화하는 과정을 포함한다. 예를들어 lossy 압축의 대표적인 JPEG포맷은 여러 압축 과정을 거치는데, 이 과정에서 DCT 테이블(Figure1)을 활용한다. 그래서 이미지를 확대했을때 일정한 패턴들로 이루어져진것을 볼수 있다. 압축기술은 포맷마다 각기 다른 방식을 취하지만, 일반적으로 압축과정을 갖으며 포맷화된다.
+
+        <div class="des_image">
+            <br><br>
+            <img src="Compression/jpeg.png">
+            
+            <br>(Figure 1)
+            <br><br>
+        </div>
+        
+        - Image Process<br><br>
+        <div class="process_image">
+        <img src="Compression/compression.jpg">
+        <br><br><br>
+        <img src="Compression/compression2.jpg">
+        <br><br><br><br>
+
+        - Soruce code<br><br><br>
+        </div>
+        <div class="code">
+        <img src="Compression/code.png">
+      </div>
+        </div>
         </div>
      </div>
 
@@ -42,9 +108,7 @@
 
  
     
-    <div class="mark"> 
-        © JI-HO PARK
-    </div>
+  
     
     
     <script>
@@ -58,46 +122,46 @@
             });
  
            
-            // 이미지 파일의 범위 (g-10부터 g-22까지)
-        const startImageNumber = 1;
-        const endImageNumber = 2;
-        const imageContainer = document.getElementById('imageContainer');
+        //     // 이미지 파일의 범위 (g-10부터 g-22까지)
+        // const startImageNumber = 1;
+        // const endImageNumber = 2;
+        // const imageContainer = document.getElementById('imageContainer');
 
-        // 이미지를 동적으로 생성하여 페이지에 추가
-        for (let i = startImageNumber; i <= endImageNumber; i++) {
-            const img = document.createElement('img');
-            img.src = './Compression/' + i + '.png'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
-            img.alt = 'compression' + i;
+        // // 이미지를 동적으로 생성하여 페이지에 추가
+        // for (let i = startImageNumber; i <= endImageNumber; i++) {
+        //     const img = document.createElement('img');
+        //     img.src = './Compression/' + i + '.png'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
+        //     img.alt = 'compression' + i;
 
-            // 이미지를 이미지 컨테이너에 추가
-            imageContainer.appendChild(img);
+        //     // 이미지를 이미지 컨테이너에 추가
+        //     imageContainer.appendChild(img);
+        // }
+
+
+        const images = [];
+        for (let i = 1; i <= 9; i++) {
+        images.push(`./Compression/${i}.png`);
         }
-
-
-//         const images = [];
-//         for (let i = 1; i <= 5; i++) {
-//   images.push(`./Demolition/d-${i}.jpg`);
-// }
+                
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main img");
         
-//         let currentIndex = 0;
-//         const imageElement = document.querySelector(".main img");
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
         
-//         function showImage(index) {
-//           imageElement.src = images[index];
-//         }
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
         
-//         function nextImage() {
-//           currentIndex = (currentIndex + 1) % images.length;
-//           showImage(currentIndex);
-//         }
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
         
-//         function previousImage() {
-//           currentIndex = (currentIndex - 1 + images.length) % images.length;
-//           showImage(currentIndex);
-//         }
-        
-//         // Automatically slide to the next image every 5 seconds
-//         setInterval(nextImage, 1000);
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1500);
       </script>
 
 </body>

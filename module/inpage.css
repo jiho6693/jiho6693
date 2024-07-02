@@ -37,9 +37,9 @@ svg {
         height:5vh;
         position:absolute;
         width:1.5vw;
-        top: 45%;
-        left: 0.1%;
-        opacity: 0.4;
+        top: 47%;
+        left: 1%;
+        opacity: 0.7;
         outline-style: none;
     }
     .rightbtn {
@@ -49,10 +49,10 @@ svg {
         display:block;
         position: absolute;
         width: 1.5vw;
-        right: 0.1%;
-        opacity: 0.4;
+        right: 1%;
+        opacity: 0.7;
      
-        top: 45%;
+        top: 47%;
      
         outline-style: none;
     }
@@ -127,7 +127,7 @@ svg {
     
     .main img{
         
-       width:100%;
+       width:100vw;
     }
 
     .info{
@@ -140,7 +140,17 @@ svg {
         margin: 0% 0% 0 1%;
     }
 
-
+    .process_image img{
+        width: 100%;
+      }
+    
+      .code{
+        text-align: center;
+      }
+      .code img{
+        width: 90%;
+      
+      }
 
     .video{
         
@@ -263,7 +273,7 @@ svg {
                 width:3.3vw;
                 top: 38%;
                 left: 0.1%;
-                opacity: 0.7;
+                opacity: 0.9;
           
             }
             .rightbtn {
@@ -274,7 +284,7 @@ svg {
                 width:3.3vw;
                 top: 38%;
                 right: 0.1%;
-                opacity: 0.7;
+                opacity: 0.9;
              
         
             }
