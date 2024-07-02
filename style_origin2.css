@@ -11,7 +11,7 @@ svg {
         color:rgb(0, 0, 0);
         /* filter: url(#distort); */
         margin: 0 0 0 0;
-        font-size: 1.22vw;
+        font-size: 2vh;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
         /* font-family: 'Helvetica Neue', sans-serif; */
@@ -44,6 +44,7 @@ svg {
     }
 
     hr{
+        margin-right:7%;
         border: 2px solid #000000;
     
 
@@ -62,7 +63,7 @@ svg {
         position:fixed;
         filter: url(#distort);
         border: 2px solid #000000;
-        left: 19.7%;
+        left: 17%;
         height : 100%;
       }
 
@@ -70,17 +71,19 @@ svg {
     .all{
         width:100%;
         display: grid;
-        grid-template-columns: 1fr  4fr;
+        grid-template-columns: 1fr  4.5fr;
         overflow-x: hidden;
     }
 
     .left {
+    
         overflow-y: auto;
         height: 100vh;
         flex: 0 0 50%; /* Adjust the percentage as needed */
     }
 
     .project a{
+            margin-left:3%;
         /* margin-left:3%; */
         z-index: 1; /* Ensure proper stacking order */
         position: relative; /* Adjust positioning if needed */

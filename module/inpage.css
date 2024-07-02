@@ -130,6 +130,16 @@ svg {
        width:100vw;
     }
 
+    .main_l img{
+                
+        width:180vh;
+    }
+
+    .main_d img{
+        width:175vh
+      }
+  
+
     .info{
         margin: 0.8% 3% 0 3% ;
       
@@ -345,6 +355,16 @@ svg {
                 width:100%;
              
             }
+
+
+            .main_l img{
+                
+                width:130vw;
+            }
+
+            .main_d img{
+                width:100vw;
+              }
 
             .main_image{
                 text-align: center;   

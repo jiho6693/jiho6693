@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <script src="../module/inpage.js"></script>
+    <style>
+
+    .sub_1{
+      text-align: center;
+    }
+      .sub_1 img{
+        margin-top:3%;
+    width:65%;
+   }
+
+   .livingarchive {
+    text-align: center;
+
+   }
+
+   .livingarchive img{
+    width: 80%;
+
+   }
+
+   .link a:link, a:visited {
+    
+    border: 2px solid #000000; 
+    /* background-color: #e3e3e3; */
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    
+    display: inline-block;
+  }
+
+  .link a:hover, a:active {
+    filter: url(#distort);
+    background-color: rgb(255, 255, 255);
+  }
+    </style>
+
+   
+    
+</head>
+
+<body>
+    <div id="header"></div>
+   
+    <div class="video">
+        <div style="padding:56.25% 0 0 0;position:relative; "><iframe src="https://player.vimeo.com/video/973810621?playsinlin=0h=ad045e21d6&autoplay=1&loop=1&muted=1&color=cd63e4&title=0&byline=0&portrait=0" style="position:absolute;top:0%;left:0%;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen;" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+      
+ 
+
+    <div class="info">
+        <div class="title">'Living archive_Unlayering Narrative', WEB, 2023</div>
+        <div class="credit"></div>
+        <div class="description">
+          <br>
+          This website was created for a course held in the winter semester of 2024 at the Rhode Island School of Design. Inspired by the course's theme of 'archive,' this website is designed to be a living space that changes shape as users interact with it. <br>
+          On mobile devices, the space transforms following the movements of the hand holding the phone, while on desktop, it changes in response to the movements of the mouse, creating a drawing-like effect.
+          <br><br>
+          이 웹사이트는 2024년 겨울학기에 Rhode Island 디자인 학교에서 진행된 수업을 위해 만들어졌습니다. 수업의 주제인 '아카이브'에서 영감을 받아 제작된 이 웹사이트는 사용자가 상호작용함에 따라 형태가 변화하는, 살아있는 공간을 상상하며 디자인하였습니다.
+          <br>모바일에서는 핸드폰을 잡고 있는 손의 움직임을, 데스크탑에서는 마우스의 움직임을 따라 공간이 드로잉되듯 변화합니다.
+
+          <div class="link">
+          <br><br>
+          <a href="https://livingarchive.site/" target="_blank">Website Link</a> 
+          <br><br>
+          </div>
+  
+          
+      </div>
+    </div>
+
+      <!-- <div class="livingarchive">
+      <input type="image" class="leftbtn" src="../module/left_b.png" onclick="previousImage()">
+      <input type="image" class="rightbtn" src="../module/right_b.png" onclick="nextImage()">
+        <img src="./livingarchive/1.jpg"><br>
+      </div> -->
+
+
+
+       
+   
+
+    
+    
+     <br><br><br><br>
+    
+    
+    <script>
+      
+        // 모듈을 가져와서 삽입합니다.
+        fetch('../module/header')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+ 
+
+            const images = [];
+        for (let i = 1; i <= 2; i++) {
+        images.push(`./livingarchive/${i}.jpg`);
+        }
+                
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".livingarchive img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1500);
+      </script>
+
+</body>
+</html>
