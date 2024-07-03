@@ -75,7 +75,7 @@ svg {
 
     .line{
         width : 100%;
-        border: 0.2vh solid #000000;
+        border: 0.15vh solid #000000;
         filter: url(#distort);
     }
 
