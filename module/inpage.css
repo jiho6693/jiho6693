@@ -138,7 +138,17 @@ svg {
     .main_d img{
         width:175vh
       }
+
+    .main_drawing {
+        text-align: center;
+    }
   
+    .main_drawing img {
+        margin-top:15vh;
+        height:80vh;
+        
+
+    }
 
     .info{
         margin: 0.8% 3% 0 3% ;
@@ -354,6 +364,13 @@ svg {
           
                 width:100%;
              
+            }
+
+            .main_drawing img{
+                margin-top:3%;
+          
+                width:100%;
+        
             }
 
 

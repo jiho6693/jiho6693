@@ -41,11 +41,11 @@
     <div id="header"></div>
 
 
-    <div class="main">
+    <div class="main_drawing">
       
         <img src="Drawing/drawing11.png"onclick="toggleImageSize(event)">
       
-        <img src="Drawing/drawing12.png"onclick="toggleImageSize(event)">
+        <!-- <img src="Drawing/drawing12.png"onclick="toggleImageSize(event)">
         <img src="Drawing/drawing7.png"onclick="toggleImageSize(event)">
         <img src="Drawing/drawing9.png"onclick="toggleImageSize(event)">
         <img src="Drawing/drawing13.png"onclick="toggleImageSize(event)">
@@ -57,7 +57,7 @@
         <img src="Drawing/drawing3.png" onclick="toggleImageSize(event)">
         <img src="Drawing/drawing5.png" onclick="toggleImageSize(event)">
         <img src="Drawing/drawing6.png"onclick="toggleImageSize(event)">
-       
+        -->
     
        
    
@@ -96,6 +96,31 @@
                 image.style.cursor = "zoom-out";
             }
         }
+
+        const images = [];
+        for (let i = 1; i <= 9; i++) {
+        images.push(`./Drawing/drawing${i}.png`);
+        }
+                
+        let currentIndex = 0;
+        const imageElement = document.querySelector(".main_drawing img");
+        
+        function showImage(index) {
+          imageElement.src = images[index];
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        function previousImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        
+        // Automatically slide to the next image every 5 seconds
+        setInterval(nextImage, 1500);
     </script>
 </body>
 </html>
