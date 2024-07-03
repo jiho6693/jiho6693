@@ -31,7 +31,7 @@
 
     body {
       
-        font-size: 4.85vw;
+        font-size: 4.5vw;
         margin: 0 0 0 0;
         font-family: 'Montserrat', sans-serif;
         font-weight:600;
@@ -76,7 +76,7 @@
  
     
     .name{
-        font-size: 4.85vw;
+        font-size: 4.5vw;
         filter: url(#distort);
        
         overflow: hidden;
