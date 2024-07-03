@@ -15,6 +15,22 @@ svg {
     width:70%;
 }
 
+.link a:link, a:visited {
+    
+    border: 2px solid #000000; 
+    /* background-color: #e3e3e3; */
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    
+    display: inline-block;
+  }
+
+  .link a:hover, a:active {
+    filter: url(#distort);
+    background-color: rgb(255, 255, 255);
+  }
+
 
 
 
@@ -145,7 +161,7 @@ svg {
   
     .main_drawing img {
         margin-top:15vh;
-        height:80vh;
+        height:83vh;
         
 
     }
