@@ -160,6 +160,10 @@ svg {
         width:180vh;
     }
 
+    .main_d{
+        text-align: center;
+    }
+
     .main_d img{
         width:175vh
       }
